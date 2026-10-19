@@ -1,0 +1,15 @@
+==========================================
+Condition 5: SAM + Mixup (rho=0.05, alpha=1.0)
+Job ID    : 12498891
+Node      : d23-15.hpc.usc.edu
+GPU       : Tesla P100-PCIE-16GB
+OUTDIR    : /scratch1/szhang01/sam_experiments/c5_sam_mixup
+Start     : Wed Sep 30 22:09:50 PDT 2026
+==========================================
+python: /home1/szhang01/.conda/envs/sam-env/bin/python
+jax: 0.2.28 [GpuDevice(id=0, process_index=0)]
+flax: 0.3.6
+==========================================
+==========================================
+End       : Thu Oct  1 14:01:42 PDT 2026
+==========================================

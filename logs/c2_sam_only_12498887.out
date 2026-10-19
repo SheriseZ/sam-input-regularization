@@ -1,0 +1,17 @@
+==========================================
+Condition 2: SAM only (rho=0.05)
+Job ID    : 12498887
+Node      : e22-04.hpc.usc.edu
+GPU       : Tesla P100-PCIE-16GB
+OUTDIR    : /scratch1/szhang01/sam_experiments/c2_sam_only
+Start     : Wed Sep 30 20:28:23 PDT 2026
+==========================================
+python: /home1/szhang01/.conda/envs/sam-env/bin/python
+jax: 0.2.28 [GpuDevice(id=0, process_index=0)]
+flax: 0.3.6
+==========================================
+Downloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to /scratch1/szhang01/tfds/cifar10/3.0.2...
+Dataset cifar10 downloaded and prepared to /scratch1/szhang01/tfds/cifar10/3.0.2. Subsequent calls will reuse this data.
+==========================================
+End       : Thu Oct  1 12:30:48 PDT 2026
+==========================================

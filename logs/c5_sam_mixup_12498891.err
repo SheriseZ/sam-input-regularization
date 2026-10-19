@@ -1,0 +1,628 @@
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+legacy/CentOS7:
+    NOTE: These modules were built for our previous operating system.
+          Please consider updating to our newer modules.
+          If you have any questions, contact carc-support@usc.edu.
+
+-------------------------------------------------------------------------------2026-09-30 22:10:21.035488: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-09-30 22:10:21.035645: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-09-30 22:10:22.002763: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/tensorflow_addons/utils/tfa_eol_msg.py:23: UserWarning: 
+
+TensorFlow Addons (TFA) has ended development and introduction of new features.
+TFA has entered a minimal maintenance and release mode until a planned end of life in May 2024.
+Please modify downstream libraries to take dependencies from other repositories in our TensorFlow community (e.g. Keras, Keras-CV, and Keras-NLP). 
+
+For more information see: https://github.com/tensorflow/addons/issues/2807 
+
+  warnings.warn(
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/tensorflow_addons/utils/ensure_tf_install.py:53: UserWarning: Tensorflow Addons supports using Python ops for all Tensorflow versions above or equal to 2.12.0 and strictly below 2.15.0 (nightly versions are not supported). 
+ The versions of TensorFlow you are currently using is 2.15.1 and is not supported. 
+Some things might work, some things might not.
+If you were to encounter a bug, do not file an issue.
+If you want to make sure you're using a tested and supported configuration, either change the TensorFlow version or the TensorFlow Addons's version. 
+You can find the compatibility matrix in TensorFlow Addon's readme:
+https://github.com/tensorflow/addons
+  warnings.warn(
+I0930 22:10:52.236373 140400762682752 xla_bridge.py:247] Unable to initialize backend 'tpu_driver': NOT_FOUND: Unable to find driver in registry given worker: 
+I0930 22:10:52.419983 140400762682752 xla_bridge.py:247] Unable to initialize backend 'tpu': INVALID_ARGUMENT: TpuPlatform is not available.
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/jax/_src/lib/xla_bridge.py:429: UserWarning: jax.host_count has been renamed to jax.process_count. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0930 22:10:52.572580 140400762682752 train.py:108] Total batch size: 128 (128 x 1 replicas)
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/jax/_src/lib/xla_bridge.py:416: UserWarning: jax.host_id has been renamed to jax.process_index. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0930 22:10:52.580438 140400762682752 dataset_info.py:599] Load dataset info from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 22:10:52.799667 140400762682752 dataset_builder.py:573] Reusing dataset cifar10 (/scratch1/szhang01/tfds/cifar10/3.0.2)
+I0930 22:10:52.883135 140400762682752 logging_logger.py:49] Constructing tf.data.Dataset cifar10 for split train[0:50000], from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 22:10:52.885711 140400762682752 dataset_info.py:599] Load dataset info from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 22:10:52.888752 140400762682752 dataset_builder.py:573] Reusing dataset cifar10 (/scratch1/szhang01/tfds/cifar10/3.0.2)
+I0930 22:10:52.920382 140400762682752 logging_logger.py:49] Constructing tf.data.Dataset cifar10 for split test, from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 22:10:52.921517 140400762682752 dataset_source.py:196] Used test set instead of validation set.
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/flax/deprecated/nn/base.py:273: DeprecationWarning: The `flax.nn` module is Deprecated, use `flax.linen` instead. Learn more and find an upgrade guide at https://github.com/google/flax/blob/main/flax/linen/README.md
+  warnings.warn("The `flax.nn` module is Deprecated, use `flax.linen` instead. Learn more and find an upgrade guide at https://github.com/google/flax/blob/main/flax/linen/README.md", DeprecationWarning)
+I0930 22:10:58.129264 140400762682752 flax_training.py:812] Starting training from scratch.
+2026-09-30 22:11:16.274432: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:11:16.306992: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:11:16.327442: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+I0930 22:15:43.903118 140400762682752 flax_training.py:756] Whole training step done in 285.7460916042328 (390 steps)
+I0930 22:16:53.787106 140400762682752 flax_training.py:858] Epoch 0 finished in 355.63s.
+I0930 22:21:13.102081 140400762682752 flax_training.py:756] Whole training step done in 259.3131399154663 (390 steps)
+I0930 22:21:13.108403 140400762682752 flax_training.py:858] Epoch 1 finished in 259.32s.
+I0930 22:25:32.445147 140400762682752 flax_training.py:756] Whole training step done in 259.33641028404236 (390 steps)
+I0930 22:25:32.449820 140400762682752 flax_training.py:858] Epoch 2 finished in 259.34s.
+I0930 22:29:51.853468 140400762682752 flax_training.py:756] Whole training step done in 259.40336537361145 (390 steps)
+I0930 22:29:51.858006 140400762682752 flax_training.py:858] Epoch 3 finished in 259.41s.
+I0930 22:34:11.178238 140400762682752 flax_training.py:756] Whole training step done in 259.31995034217834 (390 steps)
+I0930 22:34:11.183017 140400762682752 flax_training.py:858] Epoch 4 finished in 259.32s.
+I0930 22:34:11.183112 140400762682752 flax_training.py:863] Evaluating at end of epoch 4 (0-indexed)
+2026-09-30 22:34:12.456547: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:34:12.465687: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:34:12.473323: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:34:26.072079: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:34:26.077596: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 22:34:26.083155: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+I0930 22:34:26.589149 140400762682752 flax_training.py:897] Evaluated model in 15.41.
+I0930 22:38:45.872901 140400762682752 flax_training.py:756] Whole training step done in 259.2834722995758 (390 steps)
+I0930 22:38:45.877444 140400762682752 flax_training.py:858] Epoch 5 finished in 259.29s.
+I0930 22:43:05.156083 140400762682752 flax_training.py:756] Whole training step done in 259.27838706970215 (390 steps)
+I0930 22:43:05.160564 140400762682752 flax_training.py:858] Epoch 6 finished in 259.28s.
+I0930 22:47:24.458390 140400762682752 flax_training.py:756] Whole training step done in 259.29758954048157 (390 steps)
+I0930 22:47:24.463052 140400762682752 flax_training.py:858] Epoch 7 finished in 259.30s.
+I0930 22:51:43.738920 140400762682752 flax_training.py:756] Whole training step done in 259.2756185531616 (390 steps)
+I0930 22:51:43.743350 140400762682752 flax_training.py:858] Epoch 8 finished in 259.28s.
+I0930 22:56:03.046119 140400762682752 flax_training.py:756] Whole training step done in 259.30252170562744 (390 steps)
+I0930 22:56:03.050798 140400762682752 flax_training.py:858] Epoch 9 finished in 259.31s.
+I0930 22:56:03.050883 140400762682752 flax_training.py:863] Evaluating at end of epoch 9 (0-indexed)
+I0930 22:56:15.501998 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I0930 23:00:35.008938 140400762682752 flax_training.py:756] Whole training step done in 259.5066554546356 (390 steps)
+I0930 23:00:35.013639 140400762682752 flax_training.py:858] Epoch 10 finished in 259.51s.
+I0930 23:04:54.306512 140400762682752 flax_training.py:756] Whole training step done in 259.292644739151 (390 steps)
+I0930 23:04:54.311197 140400762682752 flax_training.py:858] Epoch 11 finished in 259.30s.
+I0930 23:09:13.571360 140400762682752 flax_training.py:756] Whole training step done in 259.25991892814636 (390 steps)
+I0930 23:09:13.575960 140400762682752 flax_training.py:858] Epoch 12 finished in 259.26s.
+I0930 23:13:32.869561 140400762682752 flax_training.py:756] Whole training step done in 259.2933678627014 (390 steps)
+I0930 23:13:32.876468 140400762682752 flax_training.py:858] Epoch 13 finished in 259.30s.
+I0930 23:13:32.921554 140400762682752 checkpoints.py:120] Saving checkpoint at step: 13
+I0930 23:13:33.827658 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_13
+I0930 23:13:33.832390 140400762682752 flax_training.py:909] Saved checkpoint.
+I0930 23:17:53.154099 140400762682752 flax_training.py:756] Whole training step done in 259.3215117454529 (390 steps)
+I0930 23:17:53.170871 140400762682752 flax_training.py:858] Epoch 14 finished in 259.34s.
+I0930 23:17:53.170946 140400762682752 flax_training.py:863] Evaluating at end of epoch 14 (0-indexed)
+I0930 23:18:05.623240 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I0930 23:22:24.947145 140400762682752 flax_training.py:756] Whole training step done in 259.32364201545715 (390 steps)
+I0930 23:22:24.962884 140400762682752 flax_training.py:858] Epoch 15 finished in 259.34s.
+I0930 23:26:44.252007 140400762682752 flax_training.py:756] Whole training step done in 259.2889108657837 (390 steps)
+I0930 23:26:44.256545 140400762682752 flax_training.py:858] Epoch 16 finished in 259.29s.
+I0930 23:31:03.554084 140400762682752 flax_training.py:756] Whole training step done in 259.297331571579 (390 steps)
+I0930 23:31:03.558370 140400762682752 flax_training.py:858] Epoch 17 finished in 259.30s.
+I0930 23:35:22.858558 140400762682752 flax_training.py:756] Whole training step done in 259.2999629974365 (390 steps)
+I0930 23:35:22.862787 140400762682752 flax_training.py:858] Epoch 18 finished in 259.30s.
+I0930 23:39:42.152517 140400762682752 flax_training.py:756] Whole training step done in 259.28950548171997 (390 steps)
+I0930 23:39:42.157217 140400762682752 flax_training.py:858] Epoch 19 finished in 259.29s.
+I0930 23:39:42.157290 140400762682752 flax_training.py:863] Evaluating at end of epoch 19 (0-indexed)
+I0930 23:39:54.606281 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I0930 23:44:13.887891 140400762682752 flax_training.py:756] Whole training step done in 259.28132724761963 (390 steps)
+I0930 23:44:13.892440 140400762682752 flax_training.py:858] Epoch 20 finished in 259.29s.
+I0930 23:48:33.196907 140400762682752 flax_training.py:756] Whole training step done in 259.30424308776855 (390 steps)
+I0930 23:48:33.201111 140400762682752 flax_training.py:858] Epoch 21 finished in 259.31s.
+I0930 23:52:52.498925 140400762682752 flax_training.py:756] Whole training step done in 259.2975869178772 (390 steps)
+I0930 23:52:52.503093 140400762682752 flax_training.py:858] Epoch 22 finished in 259.30s.
+I0930 23:57:11.797882 140400762682752 flax_training.py:756] Whole training step done in 259.2945840358734 (390 steps)
+I0930 23:57:11.802348 140400762682752 flax_training.py:858] Epoch 23 finished in 259.30s.
+I1001 00:01:31.091856 140400762682752 flax_training.py:756] Whole training step done in 259.2893226146698 (390 steps)
+I1001 00:01:31.096194 140400762682752 flax_training.py:858] Epoch 24 finished in 259.29s.
+I1001 00:01:31.096269 140400762682752 flax_training.py:863] Evaluating at end of epoch 24 (0-indexed)
+I1001 00:01:43.548315 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 00:06:02.868845 140400762682752 flax_training.py:756] Whole training step done in 259.3202509880066 (390 steps)
+I1001 00:06:02.873236 140400762682752 flax_training.py:858] Epoch 25 finished in 259.32s.
+I1001 00:10:22.164501 140400762682752 flax_training.py:756] Whole training step done in 259.290992975235 (390 steps)
+I1001 00:10:22.169896 140400762682752 flax_training.py:858] Epoch 26 finished in 259.30s.
+I1001 00:14:41.477459 140400762682752 flax_training.py:756] Whole training step done in 259.3073682785034 (390 steps)
+I1001 00:14:41.481707 140400762682752 flax_training.py:858] Epoch 27 finished in 259.31s.
+I1001 00:14:41.494232 140400762682752 checkpoints.py:120] Saving checkpoint at step: 27
+I1001 00:20:29.398302 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_27
+I1001 00:20:29.407205 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 00:24:48.730144 140400762682752 flax_training.py:756] Whole training step done in 259.32269859313965 (390 steps)
+I1001 00:24:48.734425 140400762682752 flax_training.py:858] Epoch 28 finished in 259.33s.
+I1001 00:29:08.018457 140400762682752 flax_training.py:756] Whole training step done in 259.2838485240936 (390 steps)
+I1001 00:29:08.022549 140400762682752 flax_training.py:858] Epoch 29 finished in 259.29s.
+I1001 00:29:08.022623 140400762682752 flax_training.py:863] Evaluating at end of epoch 29 (0-indexed)
+I1001 00:29:20.467875 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 00:33:39.746210 140400762682752 flax_training.py:756] Whole training step done in 259.27807426452637 (390 steps)
+I1001 00:33:39.750509 140400762682752 flax_training.py:858] Epoch 30 finished in 259.28s.
+I1001 00:37:58.991082 140400762682752 flax_training.py:756] Whole training step done in 259.24036931991577 (390 steps)
+I1001 00:37:58.995590 140400762682752 flax_training.py:858] Epoch 31 finished in 259.24s.
+I1001 00:42:18.311612 140400762682752 flax_training.py:756] Whole training step done in 259.3158016204834 (390 steps)
+I1001 00:42:18.316204 140400762682752 flax_training.py:858] Epoch 32 finished in 259.32s.
+I1001 00:46:37.618123 140400762682752 flax_training.py:756] Whole training step done in 259.30173420906067 (390 steps)
+I1001 00:46:37.623277 140400762682752 flax_training.py:858] Epoch 33 finished in 259.31s.
+I1001 00:50:56.938274 140400762682752 flax_training.py:756] Whole training step done in 259.3147699832916 (390 steps)
+I1001 00:50:56.942399 140400762682752 flax_training.py:858] Epoch 34 finished in 259.32s.
+I1001 00:50:56.942473 140400762682752 flax_training.py:863] Evaluating at end of epoch 34 (0-indexed)
+I1001 00:51:09.384439 140400762682752 flax_training.py:897] Evaluated model in 12.44.
+I1001 00:55:28.665156 140400762682752 flax_training.py:756] Whole training step done in 259.280442237854 (390 steps)
+I1001 00:55:28.669266 140400762682752 flax_training.py:858] Epoch 35 finished in 259.28s.
+I1001 00:59:47.973898 140400762682752 flax_training.py:756] Whole training step done in 259.304399728775 (390 steps)
+I1001 00:59:47.978367 140400762682752 flax_training.py:858] Epoch 36 finished in 259.31s.
+I1001 01:04:07.220076 140400762682752 flax_training.py:756] Whole training step done in 259.24147939682007 (390 steps)
+I1001 01:04:07.224496 140400762682752 flax_training.py:858] Epoch 37 finished in 259.25s.
+I1001 01:08:26.496330 140400762682752 flax_training.py:756] Whole training step done in 259.2716064453125 (390 steps)
+I1001 01:08:26.500460 140400762682752 flax_training.py:858] Epoch 38 finished in 259.28s.
+I1001 01:12:45.739929 140400762682752 flax_training.py:756] Whole training step done in 259.239248752594 (390 steps)
+I1001 01:12:45.744162 140400762682752 flax_training.py:858] Epoch 39 finished in 259.24s.
+I1001 01:12:45.744236 140400762682752 flax_training.py:863] Evaluating at end of epoch 39 (0-indexed)
+I1001 01:12:58.206978 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 01:17:17.491040 140400762682752 flax_training.py:756] Whole training step done in 259.28378653526306 (390 steps)
+I1001 01:17:17.495545 140400762682752 flax_training.py:858] Epoch 40 finished in 259.29s.
+I1001 01:21:36.777606 140400762682752 flax_training.py:756] Whole training step done in 259.28183579444885 (390 steps)
+I1001 01:21:36.830706 140400762682752 flax_training.py:858] Epoch 41 finished in 259.34s.
+I1001 01:21:36.844108 140400762682752 checkpoints.py:120] Saving checkpoint at step: 41
+I1001 01:28:52.645031 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_41
+I1001 01:28:52.645461 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_13
+I1001 01:28:52.648949 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 01:33:11.923950 140400762682752 flax_training.py:756] Whole training step done in 259.27479100227356 (390 steps)
+I1001 01:33:11.928293 140400762682752 flax_training.py:858] Epoch 42 finished in 259.28s.
+I1001 01:37:31.199183 140400762682752 flax_training.py:756] Whole training step done in 259.27068066596985 (390 steps)
+I1001 01:37:31.203334 140400762682752 flax_training.py:858] Epoch 43 finished in 259.27s.
+I1001 01:41:50.474326 140400762682752 flax_training.py:756] Whole training step done in 259.2708022594452 (390 steps)
+I1001 01:41:50.478375 140400762682752 flax_training.py:858] Epoch 44 finished in 259.27s.
+I1001 01:41:50.478449 140400762682752 flax_training.py:863] Evaluating at end of epoch 44 (0-indexed)
+I1001 01:42:02.925235 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 01:46:22.193948 140400762682752 flax_training.py:756] Whole training step done in 259.26844573020935 (390 steps)
+I1001 01:46:22.198131 140400762682752 flax_training.py:858] Epoch 45 finished in 259.27s.
+I1001 01:50:41.434798 140400762682752 flax_training.py:756] Whole training step done in 259.23648166656494 (390 steps)
+I1001 01:50:41.438879 140400762682752 flax_training.py:858] Epoch 46 finished in 259.24s.
+I1001 01:55:00.704527 140400762682752 flax_training.py:756] Whole training step done in 259.26546120643616 (390 steps)
+I1001 01:55:00.709414 140400762682752 flax_training.py:858] Epoch 47 finished in 259.27s.
+I1001 01:59:20.042847 140400762682752 flax_training.py:756] Whole training step done in 259.333242893219 (390 steps)
+I1001 01:59:20.046934 140400762682752 flax_training.py:858] Epoch 48 finished in 259.34s.
+I1001 02:03:39.363303 140400762682752 flax_training.py:756] Whole training step done in 259.31618475914 (390 steps)
+I1001 02:03:39.367714 140400762682752 flax_training.py:858] Epoch 49 finished in 259.32s.
+I1001 02:03:39.367789 140400762682752 flax_training.py:863] Evaluating at end of epoch 49 (0-indexed)
+I1001 02:03:51.837173 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 02:08:11.145415 140400762682752 flax_training.py:756] Whole training step done in 259.3078556060791 (390 steps)
+I1001 02:08:11.149731 140400762682752 flax_training.py:858] Epoch 50 finished in 259.31s.
+I1001 02:12:30.437654 140400762682752 flax_training.py:756] Whole training step done in 259.2877342700958 (390 steps)
+I1001 02:12:30.441709 140400762682752 flax_training.py:858] Epoch 51 finished in 259.29s.
+I1001 02:16:49.773600 140400762682752 flax_training.py:756] Whole training step done in 259.33147859573364 (390 steps)
+I1001 02:16:49.777728 140400762682752 flax_training.py:858] Epoch 52 finished in 259.34s.
+I1001 02:21:09.107792 140400762682752 flax_training.py:756] Whole training step done in 259.3298864364624 (390 steps)
+I1001 02:21:09.112297 140400762682752 flax_training.py:858] Epoch 53 finished in 259.33s.
+I1001 02:25:28.432720 140400762682752 flax_training.py:756] Whole training step done in 259.3202271461487 (390 steps)
+I1001 02:25:28.436946 140400762682752 flax_training.py:858] Epoch 54 finished in 259.32s.
+I1001 02:25:28.437022 140400762682752 flax_training.py:863] Evaluating at end of epoch 54 (0-indexed)
+I1001 02:25:40.909444 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 02:30:00.227943 140400762682752 flax_training.py:756] Whole training step done in 259.3180980682373 (390 steps)
+I1001 02:30:00.232248 140400762682752 flax_training.py:858] Epoch 55 finished in 259.32s.
+I1001 02:30:00.244655 140400762682752 checkpoints.py:120] Saving checkpoint at step: 55
+I1001 02:39:50.779921 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_55
+I1001 02:39:50.780499 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_27
+I1001 02:39:50.786349 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 02:44:10.123307 140400762682752 flax_training.py:756] Whole training step done in 259.336740732193 (390 steps)
+I1001 02:44:10.127997 140400762682752 flax_training.py:858] Epoch 56 finished in 259.34s.
+I1001 02:48:29.423173 140400762682752 flax_training.py:756] Whole training step done in 259.29498624801636 (390 steps)
+I1001 02:48:29.427577 140400762682752 flax_training.py:858] Epoch 57 finished in 259.30s.
+I1001 02:52:48.745109 140400762682752 flax_training.py:756] Whole training step done in 259.31734347343445 (390 steps)
+I1001 02:52:48.749593 140400762682752 flax_training.py:858] Epoch 58 finished in 259.32s.
+I1001 02:57:08.049373 140400762682752 flax_training.py:756] Whole training step done in 259.2995843887329 (390 steps)
+I1001 02:57:08.053517 140400762682752 flax_training.py:858] Epoch 59 finished in 259.30s.
+I1001 02:57:08.053592 140400762682752 flax_training.py:863] Evaluating at end of epoch 59 (0-indexed)
+I1001 02:57:20.524502 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 03:01:39.816219 140400762682752 flax_training.py:756] Whole training step done in 259.2914743423462 (390 steps)
+I1001 03:01:39.820730 140400762682752 flax_training.py:858] Epoch 60 finished in 259.30s.
+I1001 03:05:59.114347 140400762682752 flax_training.py:756] Whole training step done in 259.29340839385986 (390 steps)
+I1001 03:05:59.118731 140400762682752 flax_training.py:858] Epoch 61 finished in 259.30s.
+I1001 03:10:18.417257 140400762682752 flax_training.py:756] Whole training step done in 259.2983400821686 (390 steps)
+I1001 03:10:18.421343 140400762682752 flax_training.py:858] Epoch 62 finished in 259.30s.
+I1001 03:14:37.725235 140400762682752 flax_training.py:756] Whole training step done in 259.3037054538727 (390 steps)
+I1001 03:14:37.729567 140400762682752 flax_training.py:858] Epoch 63 finished in 259.31s.
+I1001 03:18:57.009223 140400762682752 flax_training.py:756] Whole training step done in 259.27946853637695 (390 steps)
+I1001 03:18:57.013217 140400762682752 flax_training.py:858] Epoch 64 finished in 259.28s.
+I1001 03:18:57.013291 140400762682752 flax_training.py:863] Evaluating at end of epoch 64 (0-indexed)
+I1001 03:19:09.482914 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 03:23:28.780043 140400762682752 flax_training.py:756] Whole training step done in 259.2968819141388 (390 steps)
+I1001 03:23:28.784276 140400762682752 flax_training.py:858] Epoch 65 finished in 259.30s.
+I1001 03:27:48.074143 140400762682752 flax_training.py:756] Whole training step done in 259.2896728515625 (390 steps)
+I1001 03:27:48.078273 140400762682752 flax_training.py:858] Epoch 66 finished in 259.29s.
+I1001 03:32:07.386799 140400762682752 flax_training.py:756] Whole training step done in 259.30833435058594 (390 steps)
+I1001 03:32:07.391207 140400762682752 flax_training.py:858] Epoch 67 finished in 259.31s.
+I1001 03:36:26.682385 140400762682752 flax_training.py:756] Whole training step done in 259.2909646034241 (390 steps)
+I1001 03:36:26.687024 140400762682752 flax_training.py:858] Epoch 68 finished in 259.30s.
+I1001 03:40:45.985798 140400762682752 flax_training.py:756] Whole training step done in 259.29856753349304 (390 steps)
+I1001 03:40:45.989988 140400762682752 flax_training.py:858] Epoch 69 finished in 259.30s.
+I1001 03:40:45.990062 140400762682752 flax_training.py:863] Evaluating at end of epoch 69 (0-indexed)
+I1001 03:40:58.448694 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 03:40:58.461139 140400762682752 checkpoints.py:120] Saving checkpoint at step: 69
+I1001 03:41:19.943954 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_69
+I1001 03:41:19.944275 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_41
+I1001 03:41:19.948467 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 03:45:39.264142 140400762682752 flax_training.py:756] Whole training step done in 259.3154535293579 (390 steps)
+I1001 03:45:39.269032 140400762682752 flax_training.py:858] Epoch 70 finished in 259.32s.
+I1001 03:49:58.637056 140400762682752 flax_training.py:756] Whole training step done in 259.3678023815155 (390 steps)
+I1001 03:49:58.641462 140400762682752 flax_training.py:858] Epoch 71 finished in 259.37s.
+I1001 03:54:17.968618 140400762682752 flax_training.py:756] Whole training step done in 259.3269295692444 (390 steps)
+I1001 03:54:17.972920 140400762682752 flax_training.py:858] Epoch 72 finished in 259.33s.
+I1001 03:58:37.298849 140400762682752 flax_training.py:756] Whole training step done in 259.3257415294647 (390 steps)
+I1001 03:58:37.303187 140400762682752 flax_training.py:858] Epoch 73 finished in 259.33s.
+I1001 04:02:56.627763 140400762682752 flax_training.py:756] Whole training step done in 259.32438921928406 (390 steps)
+I1001 04:02:56.631954 140400762682752 flax_training.py:858] Epoch 74 finished in 259.33s.
+I1001 04:02:56.632027 140400762682752 flax_training.py:863] Evaluating at end of epoch 74 (0-indexed)
+I1001 04:03:09.101799 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 04:07:28.439661 140400762682752 flax_training.py:756] Whole training step done in 259.33764123916626 (390 steps)
+I1001 04:07:28.444177 140400762682752 flax_training.py:858] Epoch 75 finished in 259.34s.
+I1001 04:11:47.776867 140400762682752 flax_training.py:756] Whole training step done in 259.33247089385986 (390 steps)
+I1001 04:11:47.781488 140400762682752 flax_training.py:858] Epoch 76 finished in 259.34s.
+I1001 04:16:07.117021 140400762682752 flax_training.py:756] Whole training step done in 259.3353042602539 (390 steps)
+I1001 04:16:07.123253 140400762682752 flax_training.py:858] Epoch 77 finished in 259.34s.
+I1001 04:20:26.463546 140400762682752 flax_training.py:756] Whole training step done in 259.33995246887207 (390 steps)
+I1001 04:20:26.468168 140400762682752 flax_training.py:858] Epoch 78 finished in 259.34s.
+I1001 04:24:45.785233 140400762682752 flax_training.py:756] Whole training step done in 259.3168742656708 (390 steps)
+I1001 04:24:45.789722 140400762682752 flax_training.py:858] Epoch 79 finished in 259.32s.
+I1001 04:24:45.789797 140400762682752 flax_training.py:863] Evaluating at end of epoch 79 (0-indexed)
+I1001 04:24:58.262027 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 04:29:17.559465 140400762682752 flax_training.py:756] Whole training step done in 259.2970361709595 (390 steps)
+I1001 04:29:17.564013 140400762682752 flax_training.py:858] Epoch 80 finished in 259.30s.
+I1001 04:33:36.870094 140400762682752 flax_training.py:756] Whole training step done in 259.305869102478 (390 steps)
+I1001 04:33:36.875276 140400762682752 flax_training.py:858] Epoch 81 finished in 259.31s.
+I1001 04:37:56.191504 140400762682752 flax_training.py:756] Whole training step done in 259.31595063209534 (390 steps)
+I1001 04:37:56.195978 140400762682752 flax_training.py:858] Epoch 82 finished in 259.32s.
+I1001 04:42:15.439553 140400762682752 flax_training.py:756] Whole training step done in 259.2433879375458 (390 steps)
+I1001 04:42:15.443629 140400762682752 flax_training.py:858] Epoch 83 finished in 259.25s.
+I1001 04:42:15.455017 140400762682752 checkpoints.py:120] Saving checkpoint at step: 83
+I1001 04:42:16.337699 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_83
+I1001 04:42:16.337864 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_55
+I1001 04:42:16.389066 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 04:46:35.628598 140400762682752 flax_training.py:756] Whole training step done in 259.23924446105957 (390 steps)
+I1001 04:46:35.633366 140400762682752 flax_training.py:858] Epoch 84 finished in 259.24s.
+I1001 04:46:35.633439 140400762682752 flax_training.py:863] Evaluating at end of epoch 84 (0-indexed)
+I1001 04:46:48.079447 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 04:51:07.318026 140400762682752 flax_training.py:756] Whole training step done in 259.2382056713104 (390 steps)
+I1001 04:51:07.322796 140400762682752 flax_training.py:858] Epoch 85 finished in 259.24s.
+I1001 04:55:26.551333 140400762682752 flax_training.py:756] Whole training step done in 259.2283282279968 (390 steps)
+I1001 04:55:26.556193 140400762682752 flax_training.py:858] Epoch 86 finished in 259.23s.
+I1001 04:59:45.777306 140400762682752 flax_training.py:756] Whole training step done in 259.22090554237366 (390 steps)
+I1001 05:02:11.487988 140400762682752 flax_training.py:858] Epoch 87 finished in 404.93s.
+I1001 05:06:30.723749 140400762682752 flax_training.py:756] Whole training step done in 259.23523116111755 (390 steps)
+I1001 05:06:30.728110 140400762682752 flax_training.py:858] Epoch 88 finished in 259.24s.
+I1001 05:10:49.988642 140400762682752 flax_training.py:756] Whole training step done in 259.2603452205658 (390 steps)
+I1001 05:10:49.992990 140400762682752 flax_training.py:858] Epoch 89 finished in 259.26s.
+I1001 05:10:49.993064 140400762682752 flax_training.py:863] Evaluating at end of epoch 89 (0-indexed)
+I1001 05:11:02.445975 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 05:15:21.684553 140400762682752 flax_training.py:756] Whole training step done in 259.2383153438568 (390 steps)
+I1001 05:15:21.689126 140400762682752 flax_training.py:858] Epoch 90 finished in 259.24s.
+I1001 05:19:40.920654 140400762682752 flax_training.py:756] Whole training step done in 259.2313153743744 (390 steps)
+I1001 05:19:40.924932 140400762682752 flax_training.py:858] Epoch 91 finished in 259.24s.
+I1001 05:24:00.168896 140400762682752 flax_training.py:756] Whole training step done in 259.2437651157379 (390 steps)
+I1001 05:24:00.173270 140400762682752 flax_training.py:858] Epoch 92 finished in 259.25s.
+I1001 05:28:19.385067 140400762682752 flax_training.py:756] Whole training step done in 259.2115819454193 (390 steps)
+I1001 05:28:19.389757 140400762682752 flax_training.py:858] Epoch 93 finished in 259.22s.
+I1001 05:32:38.633208 140400762682752 flax_training.py:756] Whole training step done in 259.24322628974915 (390 steps)
+I1001 05:32:38.637809 140400762682752 flax_training.py:858] Epoch 94 finished in 259.25s.
+I1001 05:32:38.637905 140400762682752 flax_training.py:863] Evaluating at end of epoch 94 (0-indexed)
+I1001 05:32:51.079228 140400762682752 flax_training.py:897] Evaluated model in 12.44.
+I1001 05:37:10.310748 140400762682752 flax_training.py:756] Whole training step done in 259.23123812675476 (390 steps)
+I1001 05:37:10.315426 140400762682752 flax_training.py:858] Epoch 95 finished in 259.24s.
+I1001 05:41:29.567283 140400762682752 flax_training.py:756] Whole training step done in 259.2516098022461 (390 steps)
+I1001 05:41:29.571713 140400762682752 flax_training.py:858] Epoch 96 finished in 259.26s.
+I1001 05:45:48.815590 140400762682752 flax_training.py:756] Whole training step done in 259.2436475753784 (390 steps)
+I1001 05:45:48.820260 140400762682752 flax_training.py:858] Epoch 97 finished in 259.25s.
+I1001 05:45:48.832317 140400762682752 checkpoints.py:120] Saving checkpoint at step: 97
+I1001 05:55:50.032977 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_97
+I1001 05:55:50.033410 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_69
+I1001 05:55:50.081714 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 06:00:09.371124 140400762682752 flax_training.py:756] Whole training step done in 259.2891240119934 (390 steps)
+I1001 06:00:09.375618 140400762682752 flax_training.py:858] Epoch 98 finished in 259.29s.
+I1001 06:04:28.601198 140400762682752 flax_training.py:756] Whole training step done in 259.22535610198975 (390 steps)
+I1001 06:04:28.605539 140400762682752 flax_training.py:858] Epoch 99 finished in 259.23s.
+I1001 06:04:28.605614 140400762682752 flax_training.py:863] Evaluating at end of epoch 99 (0-indexed)
+I1001 06:04:41.050859 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 06:09:00.292387 140400762682752 flax_training.py:756] Whole training step done in 259.24123191833496 (390 steps)
+I1001 06:09:00.296486 140400762682752 flax_training.py:858] Epoch 100 finished in 259.25s.
+I1001 06:13:19.563987 140400762682752 flax_training.py:756] Whole training step done in 259.2672746181488 (390 steps)
+I1001 06:13:19.568352 140400762682752 flax_training.py:858] Epoch 101 finished in 259.27s.
+I1001 06:17:38.811298 140400762682752 flax_training.py:756] Whole training step done in 259.2427189350128 (390 steps)
+I1001 06:17:38.815529 140400762682752 flax_training.py:858] Epoch 102 finished in 259.25s.
+I1001 06:21:58.038851 140400762682752 flax_training.py:756] Whole training step done in 259.2230956554413 (390 steps)
+I1001 06:21:58.043336 140400762682752 flax_training.py:858] Epoch 103 finished in 259.23s.
+I1001 06:26:17.277185 140400762682752 flax_training.py:756] Whole training step done in 259.23362016677856 (390 steps)
+I1001 06:26:17.281466 140400762682752 flax_training.py:858] Epoch 104 finished in 259.24s.
+I1001 06:26:17.281541 140400762682752 flax_training.py:863] Evaluating at end of epoch 104 (0-indexed)
+I1001 06:26:29.724974 140400762682752 flax_training.py:897] Evaluated model in 12.44.
+I1001 06:30:48.984721 140400762682752 flax_training.py:756] Whole training step done in 259.259464263916 (390 steps)
+I1001 06:30:48.989304 140400762682752 flax_training.py:858] Epoch 105 finished in 259.26s.
+I1001 06:35:08.233296 140400762682752 flax_training.py:756] Whole training step done in 259.2437627315521 (390 steps)
+I1001 06:35:08.237457 140400762682752 flax_training.py:858] Epoch 106 finished in 259.25s.
+I1001 06:39:27.490214 140400762682752 flax_training.py:756] Whole training step done in 259.2525305747986 (390 steps)
+I1001 06:39:27.494673 140400762682752 flax_training.py:858] Epoch 107 finished in 259.26s.
+I1001 06:43:46.738682 140400762682752 flax_training.py:756] Whole training step done in 259.2437834739685 (390 steps)
+I1001 06:43:46.742958 140400762682752 flax_training.py:858] Epoch 108 finished in 259.25s.
+I1001 06:48:05.965586 140400762682752 flax_training.py:756] Whole training step done in 259.2224199771881 (390 steps)
+I1001 06:48:05.969951 140400762682752 flax_training.py:858] Epoch 109 finished in 259.23s.
+I1001 06:48:05.970025 140400762682752 flax_training.py:863] Evaluating at end of epoch 109 (0-indexed)
+I1001 06:48:18.410922 140400762682752 flax_training.py:897] Evaluated model in 12.44.
+I1001 06:52:37.653758 140400762682752 flax_training.py:756] Whole training step done in 259.24257349967957 (390 steps)
+I1001 06:52:37.657848 140400762682752 flax_training.py:858] Epoch 110 finished in 259.25s.
+I1001 06:56:56.895291 140400762682752 flax_training.py:756] Whole training step done in 259.23723554611206 (390 steps)
+I1001 06:56:56.899721 140400762682752 flax_training.py:858] Epoch 111 finished in 259.24s.
+I1001 06:56:56.912583 140400762682752 checkpoints.py:120] Saving checkpoint at step: 111
+I1001 07:01:41.096820 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_111
+I1001 07:01:41.097329 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_83
+I1001 07:01:41.098914 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 07:06:00.408045 140400762682752 flax_training.py:756] Whole training step done in 259.30890560150146 (390 steps)
+I1001 07:06:00.412474 140400762682752 flax_training.py:858] Epoch 112 finished in 259.31s.
+I1001 07:10:19.682942 140400762682752 flax_training.py:756] Whole training step done in 259.2702705860138 (390 steps)
+I1001 07:10:19.687371 140400762682752 flax_training.py:858] Epoch 113 finished in 259.27s.
+I1001 07:14:38.973145 140400762682752 flax_training.py:756] Whole training step done in 259.2855865955353 (390 steps)
+I1001 07:14:38.977518 140400762682752 flax_training.py:858] Epoch 114 finished in 259.29s.
+I1001 07:14:38.977594 140400762682752 flax_training.py:863] Evaluating at end of epoch 114 (0-indexed)
+I1001 07:14:51.434569 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 07:19:10.695798 140400762682752 flax_training.py:756] Whole training step done in 259.2608382701874 (390 steps)
+I1001 07:19:10.700273 140400762682752 flax_training.py:858] Epoch 115 finished in 259.27s.
+I1001 07:23:29.935195 140400762682752 flax_training.py:756] Whole training step done in 259.23472929000854 (390 steps)
+I1001 07:23:29.939609 140400762682752 flax_training.py:858] Epoch 116 finished in 259.24s.
+I1001 07:27:49.184175 140400762682752 flax_training.py:756] Whole training step done in 259.24437618255615 (390 steps)
+I1001 07:27:49.188716 140400762682752 flax_training.py:858] Epoch 117 finished in 259.25s.
+I1001 07:32:08.441514 140400762682752 flax_training.py:756] Whole training step done in 259.25259828567505 (390 steps)
+I1001 07:32:08.445510 140400762682752 flax_training.py:858] Epoch 118 finished in 259.26s.
+I1001 07:36:27.676867 140400762682752 flax_training.py:756] Whole training step done in 259.2311453819275 (390 steps)
+I1001 07:36:27.681452 140400762682752 flax_training.py:858] Epoch 119 finished in 259.24s.
+I1001 07:36:27.681527 140400762682752 flax_training.py:863] Evaluating at end of epoch 119 (0-indexed)
+I1001 07:36:40.126852 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 07:40:59.366849 140400762682752 flax_training.py:756] Whole training step done in 259.239759683609 (390 steps)
+I1001 07:40:59.371209 140400762682752 flax_training.py:858] Epoch 120 finished in 259.24s.
+I1001 07:45:18.622420 140400762682752 flax_training.py:756] Whole training step done in 259.2510087490082 (390 steps)
+I1001 07:45:18.626631 140400762682752 flax_training.py:858] Epoch 121 finished in 259.26s.
+I1001 07:49:37.864794 140400762682752 flax_training.py:756] Whole training step done in 259.23793959617615 (390 steps)
+I1001 07:49:37.869117 140400762682752 flax_training.py:858] Epoch 122 finished in 259.24s.
+I1001 07:53:57.120515 140400762682752 flax_training.py:756] Whole training step done in 259.25121331214905 (390 steps)
+I1001 07:53:57.124642 140400762682752 flax_training.py:858] Epoch 123 finished in 259.26s.
+I1001 07:58:16.384565 140400762682752 flax_training.py:756] Whole training step done in 259.2597291469574 (390 steps)
+I1001 07:58:16.389144 140400762682752 flax_training.py:858] Epoch 124 finished in 259.26s.
+I1001 07:58:16.389218 140400762682752 flax_training.py:863] Evaluating at end of epoch 124 (0-indexed)
+I1001 07:58:28.827674 140400762682752 flax_training.py:897] Evaluated model in 12.44.
+I1001 08:02:48.092253 140400762682752 flax_training.py:756] Whole training step done in 259.26431822776794 (390 steps)
+I1001 08:02:48.096568 140400762682752 flax_training.py:858] Epoch 125 finished in 259.27s.
+I1001 08:02:48.108390 140400762682752 checkpoints.py:120] Saving checkpoint at step: 125
+I1001 08:10:17.889463 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_125
+I1001 08:10:17.889977 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_97
+I1001 08:10:17.901583 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 08:14:37.226561 140400762682752 flax_training.py:756] Whole training step done in 259.32472348213196 (390 steps)
+I1001 08:14:37.231595 140400762682752 flax_training.py:858] Epoch 126 finished in 259.33s.
+I1001 08:18:56.470364 140400762682752 flax_training.py:756] Whole training step done in 259.2385311126709 (390 steps)
+I1001 08:18:56.474521 140400762682752 flax_training.py:858] Epoch 127 finished in 259.24s.
+I1001 08:23:15.711620 140400762682752 flax_training.py:756] Whole training step done in 259.2368745803833 (390 steps)
+I1001 08:23:15.716205 140400762682752 flax_training.py:858] Epoch 128 finished in 259.24s.
+I1001 08:27:34.993004 140400762682752 flax_training.py:756] Whole training step done in 259.2765955924988 (390 steps)
+I1001 08:27:34.997071 140400762682752 flax_training.py:858] Epoch 129 finished in 259.28s.
+I1001 08:27:34.997145 140400762682752 flax_training.py:863] Evaluating at end of epoch 129 (0-indexed)
+I1001 08:27:47.431693 140400762682752 flax_training.py:897] Evaluated model in 12.43.
+I1001 08:32:06.696246 140400762682752 flax_training.py:756] Whole training step done in 259.26418137550354 (390 steps)
+I1001 08:32:06.700427 140400762682752 flax_training.py:858] Epoch 130 finished in 259.27s.
+I1001 08:36:25.956851 140400762682752 flax_training.py:756] Whole training step done in 259.2561995983124 (390 steps)
+I1001 08:36:25.961173 140400762682752 flax_training.py:858] Epoch 131 finished in 259.26s.
+I1001 08:40:45.304048 140400762682752 flax_training.py:756] Whole training step done in 259.3426511287689 (390 steps)
+I1001 08:40:45.308272 140400762682752 flax_training.py:858] Epoch 132 finished in 259.35s.
+I1001 08:45:04.634490 140400762682752 flax_training.py:756] Whole training step done in 259.3259747028351 (390 steps)
+I1001 08:45:04.639251 140400762682752 flax_training.py:858] Epoch 133 finished in 259.33s.
+I1001 08:49:23.986989 140400762682752 flax_training.py:756] Whole training step done in 259.34750485420227 (390 steps)
+I1001 08:49:23.991250 140400762682752 flax_training.py:858] Epoch 134 finished in 259.35s.
+I1001 08:49:23.991329 140400762682752 flax_training.py:863] Evaluating at end of epoch 134 (0-indexed)
+I1001 08:49:36.460704 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 08:53:55.793096 140400762682752 flax_training.py:756] Whole training step done in 259.33203315734863 (390 steps)
+I1001 08:53:55.797563 140400762682752 flax_training.py:858] Epoch 135 finished in 259.34s.
+I1001 08:58:15.125299 140400762682752 flax_training.py:756] Whole training step done in 259.3275499343872 (390 steps)
+I1001 08:58:15.129533 140400762682752 flax_training.py:858] Epoch 136 finished in 259.33s.
+I1001 09:02:34.461507 140400762682752 flax_training.py:756] Whole training step done in 259.33178544044495 (390 steps)
+I1001 09:02:34.465790 140400762682752 flax_training.py:858] Epoch 137 finished in 259.34s.
+I1001 09:06:53.784518 140400762682752 flax_training.py:756] Whole training step done in 259.3185393810272 (390 steps)
+I1001 09:06:53.789170 140400762682752 flax_training.py:858] Epoch 138 finished in 259.32s.
+I1001 09:11:13.119324 140400762682752 flax_training.py:756] Whole training step done in 259.3299241065979 (390 steps)
+I1001 09:11:13.123805 140400762682752 flax_training.py:858] Epoch 139 finished in 259.33s.
+I1001 09:11:13.123879 140400762682752 flax_training.py:863] Evaluating at end of epoch 139 (0-indexed)
+I1001 09:11:25.584389 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 09:11:25.595960 140400762682752 checkpoints.py:120] Saving checkpoint at step: 139
+I1001 09:19:58.997263 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_139
+I1001 09:19:58.997675 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_111
+I1001 09:19:59.001178 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 09:24:18.296774 140400762682752 flax_training.py:756] Whole training step done in 259.29536390304565 (390 steps)
+I1001 09:24:18.301450 140400762682752 flax_training.py:858] Epoch 140 finished in 259.30s.
+I1001 09:28:37.545123 140400762682752 flax_training.py:756] Whole training step done in 259.2434411048889 (390 steps)
+I1001 09:28:37.549503 140400762682752 flax_training.py:858] Epoch 141 finished in 259.25s.
+I1001 09:32:56.794728 140400762682752 flax_training.py:756] Whole training step done in 259.2450358867645 (390 steps)
+I1001 09:32:56.798771 140400762682752 flax_training.py:858] Epoch 142 finished in 259.25s.
+I1001 09:37:16.046480 140400762682752 flax_training.py:756] Whole training step done in 259.2475097179413 (390 steps)
+I1001 09:37:16.050592 140400762682752 flax_training.py:858] Epoch 143 finished in 259.25s.
+I1001 09:41:35.295574 140400762682752 flax_training.py:756] Whole training step done in 259.2447910308838 (390 steps)
+I1001 09:41:35.300305 140400762682752 flax_training.py:858] Epoch 144 finished in 259.25s.
+I1001 09:41:35.300386 140400762682752 flax_training.py:863] Evaluating at end of epoch 144 (0-indexed)
+I1001 09:41:47.768234 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 09:46:07.032982 140400762682752 flax_training.py:756] Whole training step done in 259.26447916030884 (390 steps)
+I1001 09:46:07.037395 140400762682752 flax_training.py:858] Epoch 145 finished in 259.27s.
+I1001 09:50:26.282144 140400762682752 flax_training.py:756] Whole training step done in 259.2445592880249 (390 steps)
+I1001 09:50:26.286740 140400762682752 flax_training.py:858] Epoch 146 finished in 259.25s.
+I1001 09:54:45.766855 140400762682752 flax_training.py:756] Whole training step done in 259.47998690605164 (390 steps)
+I1001 09:54:45.771101 140400762682752 flax_training.py:858] Epoch 147 finished in 259.48s.
+I1001 09:59:05.042060 140400762682752 flax_training.py:756] Whole training step done in 259.27077746391296 (390 steps)
+I1001 09:59:05.046955 140400762682752 flax_training.py:858] Epoch 148 finished in 259.28s.
+I1001 10:03:24.321574 140400762682752 flax_training.py:756] Whole training step done in 259.27442026138306 (390 steps)
+I1001 10:03:24.325810 140400762682752 flax_training.py:858] Epoch 149 finished in 259.28s.
+I1001 10:03:24.325885 140400762682752 flax_training.py:863] Evaluating at end of epoch 149 (0-indexed)
+I1001 10:03:36.799677 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 10:07:56.074746 140400762682752 flax_training.py:756] Whole training step done in 259.27481865882874 (390 steps)
+I1001 10:07:56.078953 140400762682752 flax_training.py:858] Epoch 150 finished in 259.28s.
+I1001 10:12:15.340294 140400762682752 flax_training.py:756] Whole training step done in 259.2611277103424 (390 steps)
+I1001 10:12:15.345910 140400762682752 flax_training.py:858] Epoch 151 finished in 259.27s.
+I1001 10:16:34.644588 140400762682752 flax_training.py:756] Whole training step done in 259.29846262931824 (390 steps)
+I1001 10:16:34.648723 140400762682752 flax_training.py:858] Epoch 152 finished in 259.30s.
+I1001 10:20:53.913258 140400762682752 flax_training.py:756] Whole training step done in 259.2643213272095 (390 steps)
+I1001 10:20:53.917755 140400762682752 flax_training.py:858] Epoch 153 finished in 259.27s.
+I1001 10:20:53.930438 140400762682752 checkpoints.py:120] Saving checkpoint at step: 153
+I1001 10:26:58.481064 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_153
+I1001 10:26:58.481567 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_125
+I1001 10:26:58.485965 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 10:31:17.821591 140400762682752 flax_training.py:756] Whole training step done in 259.3354148864746 (390 steps)
+I1001 10:31:17.825984 140400762682752 flax_training.py:858] Epoch 154 finished in 259.34s.
+I1001 10:31:17.826059 140400762682752 flax_training.py:863] Evaluating at end of epoch 154 (0-indexed)
+I1001 10:31:30.292276 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 10:35:49.597106 140400762682752 flax_training.py:756] Whole training step done in 259.30312609672546 (390 steps)
+I1001 10:35:49.608605 140400762682752 flax_training.py:858] Epoch 155 finished in 259.32s.
+I1001 10:40:08.959151 140400762682752 flax_training.py:756] Whole training step done in 259.3495743274689 (390 steps)
+I1001 10:40:08.964771 140400762682752 flax_training.py:858] Epoch 156 finished in 259.36s.
+I1001 10:44:28.260238 140400762682752 flax_training.py:756] Whole training step done in 259.29438614845276 (390 steps)
+I1001 10:44:28.271456 140400762682752 flax_training.py:858] Epoch 157 finished in 259.31s.
+I1001 10:48:47.576926 140400762682752 flax_training.py:756] Whole training step done in 259.3051640987396 (390 steps)
+I1001 10:48:47.581334 140400762682752 flax_training.py:858] Epoch 158 finished in 259.31s.
+I1001 10:53:06.873815 140400762682752 flax_training.py:756] Whole training step done in 259.2922661304474 (390 steps)
+I1001 10:53:06.878225 140400762682752 flax_training.py:858] Epoch 159 finished in 259.30s.
+I1001 10:53:06.878300 140400762682752 flax_training.py:863] Evaluating at end of epoch 159 (0-indexed)
+I1001 10:53:19.353029 140400762682752 flax_training.py:897] Evaluated model in 12.47.
+I1001 10:57:38.606204 140400762682752 flax_training.py:756] Whole training step done in 259.25276350975037 (390 steps)
+I1001 10:57:38.610485 140400762682752 flax_training.py:858] Epoch 160 finished in 259.26s.
+I1001 11:01:57.878705 140400762682752 flax_training.py:756] Whole training step done in 259.2680070400238 (390 steps)
+I1001 11:01:57.883469 140400762682752 flax_training.py:858] Epoch 161 finished in 259.27s.
+I1001 11:06:17.140037 140400762682752 flax_training.py:756] Whole training step done in 259.2563512325287 (390 steps)
+I1001 11:06:17.144371 140400762682752 flax_training.py:858] Epoch 162 finished in 259.26s.
+I1001 11:10:36.368431 140400762682752 flax_training.py:756] Whole training step done in 259.2238268852234 (390 steps)
+I1001 11:10:36.372530 140400762682752 flax_training.py:858] Epoch 163 finished in 259.23s.
+I1001 11:14:55.574583 140400762682752 flax_training.py:756] Whole training step done in 259.2018265724182 (390 steps)
+I1001 11:14:55.578644 140400762682752 flax_training.py:858] Epoch 164 finished in 259.21s.
+I1001 11:14:55.578718 140400762682752 flax_training.py:863] Evaluating at end of epoch 164 (0-indexed)
+I1001 11:15:08.033095 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 11:19:27.306946 140400762682752 flax_training.py:756] Whole training step done in 259.27360582351685 (390 steps)
+I1001 11:19:27.310995 140400762682752 flax_training.py:858] Epoch 165 finished in 259.28s.
+I1001 11:23:46.544421 140400762682752 flax_training.py:756] Whole training step done in 259.2332272529602 (390 steps)
+I1001 11:23:46.548535 140400762682752 flax_training.py:858] Epoch 166 finished in 259.24s.
+I1001 11:28:05.782623 140400762682752 flax_training.py:756] Whole training step done in 259.2338755130768 (390 steps)
+I1001 11:28:05.787264 140400762682752 flax_training.py:858] Epoch 167 finished in 259.24s.
+I1001 11:28:05.799748 140400762682752 checkpoints.py:120] Saving checkpoint at step: 167
+I1001 11:28:06.746691 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_167
+I1001 11:28:06.746945 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_139
+I1001 11:28:06.751955 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 11:32:25.984906 140400762682752 flax_training.py:756] Whole training step done in 259.2327606678009 (390 steps)
+I1001 11:32:25.989305 140400762682752 flax_training.py:858] Epoch 168 finished in 259.24s.
+I1001 11:36:45.277729 140400762682752 flax_training.py:756] Whole training step done in 259.2882089614868 (390 steps)
+I1001 11:36:45.281979 140400762682752 flax_training.py:858] Epoch 169 finished in 259.29s.
+I1001 11:36:45.282054 140400762682752 flax_training.py:863] Evaluating at end of epoch 169 (0-indexed)
+I1001 11:36:57.736614 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 11:41:16.995438 140400762682752 flax_training.py:756] Whole training step done in 259.2585768699646 (390 steps)
+I1001 11:41:16.999988 140400762682752 flax_training.py:858] Epoch 170 finished in 259.26s.
+I1001 11:45:36.271761 140400762682752 flax_training.py:756] Whole training step done in 259.2715766429901 (390 steps)
+I1001 11:45:36.275947 140400762682752 flax_training.py:858] Epoch 171 finished in 259.28s.
+I1001 11:49:55.547544 140400762682752 flax_training.py:756] Whole training step done in 259.27140498161316 (390 steps)
+I1001 11:49:55.551600 140400762682752 flax_training.py:858] Epoch 172 finished in 259.28s.
+I1001 11:54:14.807715 140400762682752 flax_training.py:756] Whole training step done in 259.2558579444885 (390 steps)
+I1001 11:54:14.813302 140400762682752 flax_training.py:858] Epoch 173 finished in 259.26s.
+I1001 11:58:34.135874 140400762682752 flax_training.py:756] Whole training step done in 259.32232904434204 (390 steps)
+I1001 11:58:34.162593 140400762682752 flax_training.py:858] Epoch 174 finished in 259.35s.
+I1001 11:58:34.162735 140400762682752 flax_training.py:863] Evaluating at end of epoch 174 (0-indexed)
+I1001 11:58:46.622660 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 12:03:05.876210 140400762682752 flax_training.py:756] Whole training step done in 259.25330328941345 (390 steps)
+I1001 12:03:05.880549 140400762682752 flax_training.py:858] Epoch 175 finished in 259.26s.
+I1001 12:07:25.148545 140400762682752 flax_training.py:756] Whole training step done in 259.26775574684143 (390 steps)
+I1001 12:07:25.152742 140400762682752 flax_training.py:858] Epoch 176 finished in 259.27s.
+I1001 12:11:44.402178 140400762682752 flax_training.py:756] Whole training step done in 259.24922275543213 (390 steps)
+I1001 12:11:44.406579 140400762682752 flax_training.py:858] Epoch 177 finished in 259.25s.
+I1001 12:16:03.656932 140400762682752 flax_training.py:756] Whole training step done in 259.2501208782196 (390 steps)
+I1001 12:16:03.661486 140400762682752 flax_training.py:858] Epoch 178 finished in 259.25s.
+I1001 12:20:22.908894 140400762682752 flax_training.py:756] Whole training step done in 259.2471749782562 (390 steps)
+I1001 12:20:22.913176 140400762682752 flax_training.py:858] Epoch 179 finished in 259.25s.
+I1001 12:20:22.913250 140400762682752 flax_training.py:863] Evaluating at end of epoch 179 (0-indexed)
+I1001 12:20:35.374433 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 12:24:54.675513 140400762682752 flax_training.py:756] Whole training step done in 259.3001627922058 (390 steps)
+I1001 12:24:54.680484 140400762682752 flax_training.py:858] Epoch 180 finished in 259.31s.
+I1001 12:29:13.922002 140400762682752 flax_training.py:756] Whole training step done in 259.2410395145416 (390 steps)
+I1001 12:29:13.930722 140400762682752 flax_training.py:858] Epoch 181 finished in 259.25s.
+I1001 12:29:13.942317 140400762682752 checkpoints.py:120] Saving checkpoint at step: 181
+I1001 12:35:23.838782 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_181
+I1001 12:35:23.839240 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_153
+I1001 12:35:23.889440 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 12:39:43.197241 140400762682752 flax_training.py:756] Whole training step done in 259.30743503570557 (390 steps)
+I1001 12:39:43.201889 140400762682752 flax_training.py:858] Epoch 182 finished in 259.31s.
+I1001 12:44:02.448011 140400762682752 flax_training.py:756] Whole training step done in 259.2458965778351 (390 steps)
+I1001 12:44:02.452353 140400762682752 flax_training.py:858] Epoch 183 finished in 259.25s.
+I1001 12:48:21.696058 140400762682752 flax_training.py:756] Whole training step done in 259.2434720993042 (390 steps)
+I1001 12:48:21.700890 140400762682752 flax_training.py:858] Epoch 184 finished in 259.25s.
+I1001 12:48:21.700972 140400762682752 flax_training.py:863] Evaluating at end of epoch 184 (0-indexed)
+I1001 12:48:34.151560 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 12:52:53.404989 140400762682752 flax_training.py:756] Whole training step done in 259.2531545162201 (390 steps)
+I1001 12:52:53.409585 140400762682752 flax_training.py:858] Epoch 185 finished in 259.26s.
+I1001 12:57:12.655160 140400762682752 flax_training.py:756] Whole training step done in 259.24536180496216 (390 steps)
+I1001 12:57:12.659907 140400762682752 flax_training.py:858] Epoch 186 finished in 259.25s.
+I1001 13:01:31.903364 140400762682752 flax_training.py:756] Whole training step done in 259.2432208061218 (390 steps)
+I1001 13:01:31.908414 140400762682752 flax_training.py:858] Epoch 187 finished in 259.25s.
+I1001 13:05:51.148627 140400762682752 flax_training.py:756] Whole training step done in 259.2399764060974 (390 steps)
+I1001 13:05:51.152869 140400762682752 flax_training.py:858] Epoch 188 finished in 259.24s.
+I1001 13:10:10.389110 140400762682752 flax_training.py:756] Whole training step done in 259.2360119819641 (390 steps)
+I1001 13:10:10.393306 140400762682752 flax_training.py:858] Epoch 189 finished in 259.24s.
+I1001 13:10:10.393385 140400762682752 flax_training.py:863] Evaluating at end of epoch 189 (0-indexed)
+I1001 13:10:22.845472 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 13:14:42.099807 140400762682752 flax_training.py:756] Whole training step done in 259.2538995742798 (390 steps)
+I1001 13:14:42.104397 140400762682752 flax_training.py:858] Epoch 190 finished in 259.26s.
+I1001 13:19:01.359932 140400762682752 flax_training.py:756] Whole training step done in 259.255331993103 (390 steps)
+I1001 13:19:01.364087 140400762682752 flax_training.py:858] Epoch 191 finished in 259.26s.
+I1001 13:23:20.593538 140400762682752 flax_training.py:756] Whole training step done in 259.22924399375916 (390 steps)
+I1001 13:23:20.598052 140400762682752 flax_training.py:858] Epoch 192 finished in 259.23s.
+I1001 13:27:39.825570 140400762682752 flax_training.py:756] Whole training step done in 259.22731161117554 (390 steps)
+I1001 13:27:39.829935 140400762682752 flax_training.py:858] Epoch 193 finished in 259.23s.
+I1001 13:31:59.066178 140400762682752 flax_training.py:756] Whole training step done in 259.2360348701477 (390 steps)
+I1001 13:31:59.070291 140400762682752 flax_training.py:858] Epoch 194 finished in 259.24s.
+I1001 13:31:59.070374 140400762682752 flax_training.py:863] Evaluating at end of epoch 194 (0-indexed)
+I1001 13:32:11.522314 140400762682752 flax_training.py:897] Evaluated model in 12.45.
+I1001 13:36:30.799889 140400762682752 flax_training.py:756] Whole training step done in 259.2773153781891 (390 steps)
+I1001 13:36:31.311408 140400762682752 flax_training.py:858] Epoch 195 finished in 259.79s.
+I1001 13:36:31.326634 140400762682752 checkpoints.py:120] Saving checkpoint at step: 195
+I1001 13:44:08.114805 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_195
+I1001 13:44:08.115409 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_167
+I1001 13:44:08.117515 140400762682752 flax_training.py:909] Saved checkpoint.
+I1001 13:48:27.488801 140400762682752 flax_training.py:756] Whole training step done in 259.3710689544678 (390 steps)
+I1001 13:48:27.493010 140400762682752 flax_training.py:858] Epoch 196 finished in 259.38s.
+I1001 13:52:46.793465 140400762682752 flax_training.py:756] Whole training step done in 259.3002622127533 (390 steps)
+I1001 13:52:46.797867 140400762682752 flax_training.py:858] Epoch 197 finished in 259.30s.
+I1001 13:57:06.081361 140400762682752 flax_training.py:756] Whole training step done in 259.28329849243164 (390 steps)
+I1001 13:57:06.085443 140400762682752 flax_training.py:858] Epoch 198 finished in 259.29s.
+I1001 14:01:25.317533 140400762682752 flax_training.py:756] Whole training step done in 259.2318711280823 (390 steps)
+I1001 14:01:25.322155 140400762682752 flax_training.py:858] Epoch 199 finished in 259.24s.
+I1001 14:01:25.322229 140400762682752 flax_training.py:863] Evaluating at end of epoch 199 (0-indexed)
+I1001 14:01:37.782800 140400762682752 flax_training.py:897] Evaluated model in 12.46.
+I1001 14:01:37.792902 140400762682752 checkpoints.py:120] Saving checkpoint at step: 199
+I1001 14:01:38.702307 140400762682752 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_199
+I1001 14:01:38.702482 140400762682752 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c5_sam_mixup/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_181

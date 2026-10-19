@@ -26,7 +26,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=48G
 #SBATCH --time=20:00:00
-#SBATCH --account=vsharan_1861
+#SBATCH --account=yzhao010_1531
 #SBATCH --output=logs/c10_sam_mixcut_%j.out
 #SBATCH --error=logs/c10_sam_mixcut_%j.err
 

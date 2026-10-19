@@ -11,7 +11,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=48G
 #SBATCH --time=12:00:00
-#SBATCH --account=vsharan_1861
+#SBATCH --account=yzhao010_1531
 #SBATCH --output=logs/c1_sgd_baseline_%j.out
 #SBATCH --error=logs/c1_sgd_baseline_%j.err
 

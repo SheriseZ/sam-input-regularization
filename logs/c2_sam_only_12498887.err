@@ -1,0 +1,1280 @@
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+legacy/CentOS7:
+    NOTE: These modules were built for our previous operating system.
+          Please consider updating to our newer modules.
+          If you have any questions, contact carc-support@usc.edu.
+
+-------------------------------------------------------------------------------2026-09-30 20:28:57.191441: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-09-30 20:28:57.191640: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-09-30 20:28:58.203774: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/tensorflow_addons/utils/tfa_eol_msg.py:23: UserWarning: 
+
+TensorFlow Addons (TFA) has ended development and introduction of new features.
+TFA has entered a minimal maintenance and release mode until a planned end of life in May 2024.
+Please modify downstream libraries to take dependencies from other repositories in our TensorFlow community (e.g. Keras, Keras-CV, and Keras-NLP). 
+
+For more information see: https://github.com/tensorflow/addons/issues/2807 
+
+  warnings.warn(
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/tensorflow_addons/utils/ensure_tf_install.py:53: UserWarning: Tensorflow Addons supports using Python ops for all Tensorflow versions above or equal to 2.12.0 and strictly below 2.15.0 (nightly versions are not supported). 
+ The versions of TensorFlow you are currently using is 2.15.1 and is not supported. 
+Some things might work, some things might not.
+If you were to encounter a bug, do not file an issue.
+If you want to make sure you're using a tested and supported configuration, either change the TensorFlow version or the TensorFlow Addons's version. 
+You can find the compatibility matrix in TensorFlow Addon's readme:
+https://github.com/tensorflow/addons
+  warnings.warn(
+I0930 20:29:31.161675 139779172703616 xla_bridge.py:247] Unable to initialize backend 'tpu_driver': NOT_FOUND: Unable to find driver in registry given worker: 
+I0930 20:29:31.342806 139779172703616 xla_bridge.py:247] Unable to initialize backend 'tpu': INVALID_ARGUMENT: TpuPlatform is not available.
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/jax/_src/lib/xla_bridge.py:429: UserWarning: jax.host_count has been renamed to jax.process_count. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0930 20:29:31.484881 139779172703616 train.py:108] Total batch size: 128 (128 x 1 replicas)
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/jax/_src/lib/xla_bridge.py:416: UserWarning: jax.host_id has been renamed to jax.process_index. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0930 20:29:31.525712 139779172703616 dataset_builder.py:638] Generating dataset cifar10 (/scratch1/szhang01/tfds/cifar10/3.0.2)
+Dl Completed...: 0 url [00:00, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[AI0930 20:29:32.046423 139779172703616 download_manager.py:401] Downloading https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz into /scratch1/szhang01/tfds/downloads/cs.toronto.edu_kriz_cifar-10-binaryODHPtIjLh3oLcXirEISTO7dkzyKjRCuol6lV8Wc6C7s.tar.gz.tmp.a52b1f396d7b4d2fb813342cfb6306c1...
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   0%|          | 0/162 [00:01<?, ? MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Size...:   1%|          | 1/162 [00:01<04:21,  1.62s/ MiB][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|          | 1/162 [00:01<04:21,  1.62s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Size...:   1%|          | 2/162 [00:01<01:56,  1.37 MiB/s][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|          | 2/162 [00:01<01:56,  1.37 MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▏         | 3/162 [00:01<01:56,  1.37 MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Size...:   2%|▏         | 4/162 [00:01<00:49,  3.22 MiB/s][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▏         | 4/162 [00:01<00:49,  3.22 MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   3%|▎         | 5/162 [00:01<00:48,  3.22 MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Size...:   4%|▎         | 6/162 [00:01<00:30,  5.06 MiB/s][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   4%|▎         | 6/162 [00:01<00:30,  5.06 MiB/s][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   4%|▍         | 7/162 [00:02<00:30,  5.06 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:   5%|▍         | 8/162 [00:02<00:22,  6.73 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   5%|▍         | 8/162 [00:02<00:22,  6.73 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   6%|▌         | 9/162 [00:02<00:22,  6.73 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:   6%|▌         | 10/162 [00:02<00:18,  8.25 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   6%|▌         | 10/162 [00:02<00:18,  8.25 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   7%|▋         | 11/162 [00:02<00:18,  8.25 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:   7%|▋         | 12/162 [00:02<00:16,  9.31 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   7%|▋         | 12/162 [00:02<00:16,  9.31 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   8%|▊         | 13/162 [00:02<00:16,  9.31 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:   9%|▊         | 14/162 [00:02<00:14, 10.40 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   9%|▊         | 14/162 [00:02<00:14, 10.40 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:   9%|▉         | 15/162 [00:02<00:14, 10.40 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:  10%|▉         | 16/162 [00:02<00:12, 11.75 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  10%|▉         | 16/162 [00:02<00:12, 11.75 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  10%|█         | 17/162 [00:02<00:12, 11.75 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:  11%|█         | 18/162 [00:02<00:11, 13.08 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  11%|█         | 18/162 [00:02<00:11, 13.08 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  12%|█▏        | 19/162 [00:02<00:10, 13.08 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:  12%|█▏        | 20/162 [00:02<00:09, 14.23 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  12%|█▏        | 20/162 [00:02<00:09, 14.23 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  13%|█▎        | 21/162 [00:03<00:09, 14.23 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  14%|█▎        | 22/162 [00:03<00:09, 14.69 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  14%|█▎        | 22/162 [00:03<00:09, 14.69 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  14%|█▍        | 23/162 [00:03<00:09, 14.69 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  15%|█▍        | 24/162 [00:03<00:08, 15.53 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  15%|█▍        | 24/162 [00:03<00:08, 15.53 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  15%|█▌        | 25/162 [00:03<00:08, 15.53 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  16%|█▌        | 26/162 [00:03<00:08, 16.05 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  16%|█▌        | 26/162 [00:03<00:08, 16.05 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  17%|█▋        | 27/162 [00:03<00:08, 16.05 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  17%|█▋        | 28/162 [00:03<00:08, 16.23 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  17%|█▋        | 28/162 [00:03<00:08, 16.23 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  18%|█▊        | 29/162 [00:03<00:08, 16.23 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  19%|█▊        | 30/162 [00:03<00:08, 16.23 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  19%|█▉        | 31/162 [00:03<00:07, 17.44 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  19%|█▉        | 31/162 [00:03<00:07, 17.44 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  20%|█▉        | 32/162 [00:03<00:07, 17.44 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  20%|██        | 33/162 [00:03<00:07, 17.70 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  20%|██        | 33/162 [00:03<00:07, 17.70 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  21%|██        | 34/162 [00:03<00:07, 17.70 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  22%|██▏       | 35/162 [00:03<00:07, 17.70 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  22%|██▏       | 35/162 [00:03<00:07, 17.70 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  22%|██▏       | 36/162 [00:03<00:07, 17.70 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  23%|██▎       | 37/162 [00:03<00:06, 17.91 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  23%|██▎       | 37/162 [00:03<00:06, 17.91 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  23%|██▎       | 38/162 [00:03<00:06, 17.91 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  24%|██▍       | 39/162 [00:04<00:06, 18.16 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  24%|██▍       | 39/162 [00:04<00:06, 18.16 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  25%|██▍       | 40/162 [00:04<00:06, 18.16 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  25%|██▌       | 41/162 [00:04<00:06, 18.16 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  26%|██▌       | 42/162 [00:04<00:06, 19.26 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  26%|██▌       | 42/162 [00:04<00:06, 19.26 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  27%|██▋       | 43/162 [00:04<00:06, 19.26 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  27%|██▋       | 44/162 [00:04<00:06, 19.26 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  28%|██▊       | 45/162 [00:04<00:05, 19.87 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  28%|██▊       | 45/162 [00:04<00:05, 19.87 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  28%|██▊       | 46/162 [00:04<00:05, 19.87 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  29%|██▉       | 47/162 [00:04<00:05, 19.82 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  29%|██▉       | 47/162 [00:04<00:05, 19.82 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  30%|██▉       | 48/162 [00:04<00:05, 19.82 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  30%|███       | 49/162 [00:04<00:05, 19.82 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  31%|███       | 50/162 [00:04<00:05, 20.22 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  31%|███       | 50/162 [00:04<00:05, 20.22 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  31%|███▏      | 51/162 [00:04<00:05, 20.22 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  32%|███▏      | 52/162 [00:04<00:05, 20.22 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  33%|███▎      | 53/162 [00:04<00:05, 20.18 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  33%|███▎      | 53/162 [00:04<00:05, 20.18 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  33%|███▎      | 54/162 [00:04<00:05, 20.18 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  34%|███▍      | 55/162 [00:04<00:05, 20.18 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  35%|███▍      | 56/162 [00:04<00:05, 21.03 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  35%|███▍      | 56/162 [00:04<00:05, 21.03 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  35%|███▌      | 57/162 [00:04<00:04, 21.03 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  36%|███▌      | 58/162 [00:04<00:04, 21.03 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  36%|███▋      | 59/162 [00:04<00:05, 20.29 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  36%|███▋      | 59/162 [00:04<00:05, 20.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  37%|███▋      | 60/162 [00:05<00:05, 20.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  38%|███▊      | 61/162 [00:05<00:04, 20.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  38%|███▊      | 62/162 [00:05<00:04, 21.00 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  38%|███▊      | 62/162 [00:05<00:04, 21.00 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  39%|███▉      | 63/162 [00:05<00:04, 21.00 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  40%|███▉      | 64/162 [00:05<00:04, 21.00 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  40%|████      | 65/162 [00:05<00:04, 20.57 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  40%|████      | 65/162 [00:05<00:04, 20.57 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  41%|████      | 66/162 [00:05<00:04, 20.57 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  41%|████▏     | 67/162 [00:05<00:04, 20.57 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  42%|████▏     | 68/162 [00:05<00:04, 20.54 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  42%|████▏     | 68/162 [00:05<00:04, 20.54 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  43%|████▎     | 69/162 [00:05<00:04, 20.54 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  43%|████▎     | 70/162 [00:05<00:04, 20.54 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  44%|████▍     | 71/162 [00:05<00:04, 20.53 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  44%|████▍     | 71/162 [00:05<00:04, 20.53 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  44%|████▍     | 72/162 [00:05<00:04, 20.53 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  45%|████▌     | 73/162 [00:05<00:04, 20.53 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  46%|████▌     | 74/162 [00:05<00:04, 20.89 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  46%|████▌     | 74/162 [00:05<00:04, 20.89 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  46%|████▋     | 75/162 [00:05<00:04, 20.89 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  47%|████▋     | 76/162 [00:05<00:04, 20.89 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  48%|████▊     | 77/162 [00:05<00:03, 21.36 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  48%|████▊     | 77/162 [00:05<00:03, 21.36 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  48%|████▊     | 78/162 [00:05<00:03, 21.36 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  49%|████▉     | 79/162 [00:05<00:03, 21.36 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  49%|████▉     | 80/162 [00:05<00:03, 21.71 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  49%|████▉     | 80/162 [00:05<00:03, 21.71 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  50%|█████     | 81/162 [00:06<00:03, 21.71 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  51%|█████     | 82/162 [00:06<00:03, 21.71 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  51%|█████     | 83/162 [00:06<00:03, 22.06 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  51%|█████     | 83/162 [00:06<00:03, 22.06 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  52%|█████▏    | 84/162 [00:06<00:03, 22.06 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  52%|█████▏    | 85/162 [00:06<00:03, 22.06 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  53%|█████▎    | 86/162 [00:06<00:03, 22.61 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  53%|█████▎    | 86/162 [00:06<00:03, 22.61 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  54%|█████▎    | 87/162 [00:06<00:03, 22.61 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  54%|█████▍    | 88/162 [00:06<00:03, 22.61 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  55%|█████▍    | 89/162 [00:06<00:03, 22.57 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  55%|█████▍    | 89/162 [00:06<00:03, 22.57 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  56%|█████▌    | 90/162 [00:06<00:03, 22.57 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  56%|█████▌    | 91/162 [00:06<00:03, 22.57 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  57%|█████▋    | 92/162 [00:06<00:03, 22.82 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  57%|█████▋    | 92/162 [00:06<00:03, 22.82 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  57%|█████▋    | 93/162 [00:06<00:03, 22.82 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  58%|█████▊    | 94/162 [00:06<00:02, 22.82 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  59%|█████▊    | 95/162 [00:06<00:02, 23.28 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  59%|█████▊    | 95/162 [00:06<00:02, 23.28 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  59%|█████▉    | 96/162 [00:06<00:02, 23.28 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  60%|█████▉    | 97/162 [00:06<00:02, 23.28 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  60%|██████    | 98/162 [00:06<00:02, 23.32 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  60%|██████    | 98/162 [00:06<00:02, 23.32 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  61%|██████    | 99/162 [00:06<00:02, 23.32 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  62%|██████▏   | 100/162 [00:06<00:02, 23.32 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  62%|██████▏   | 101/162 [00:06<00:02, 23.59 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  62%|██████▏   | 101/162 [00:06<00:02, 23.59 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  63%|██████▎   | 102/162 [00:06<00:02, 23.59 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  64%|██████▎   | 103/162 [00:06<00:02, 23.59 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  64%|██████▍   | 104/162 [00:06<00:02, 23.68 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  64%|██████▍   | 104/162 [00:06<00:02, 23.68 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  65%|██████▍   | 105/162 [00:07<00:02, 23.68 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  65%|██████▌   | 106/162 [00:07<00:02, 23.68 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  66%|██████▌   | 107/162 [00:07<00:02, 23.76 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  66%|██████▌   | 107/162 [00:07<00:02, 23.76 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  67%|██████▋   | 108/162 [00:07<00:02, 23.76 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  67%|██████▋   | 109/162 [00:07<00:02, 23.76 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  68%|██████▊   | 110/162 [00:07<00:02, 24.15 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  68%|██████▊   | 110/162 [00:07<00:02, 24.15 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  69%|██████▊   | 111/162 [00:07<00:02, 24.15 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  69%|██████▉   | 112/162 [00:07<00:02, 24.15 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  70%|██████▉   | 113/162 [00:07<00:02, 23.79 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  70%|██████▉   | 113/162 [00:07<00:02, 23.79 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  70%|███████   | 114/162 [00:07<00:02, 23.79 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  71%|███████   | 115/162 [00:07<00:01, 23.79 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  72%|███████▏  | 116/162 [00:07<00:01, 24.27 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  72%|███████▏  | 116/162 [00:07<00:01, 24.27 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  72%|███████▏  | 117/162 [00:07<00:01, 24.27 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  73%|███████▎  | 118/162 [00:07<00:01, 24.27 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  73%|███████▎  | 119/162 [00:07<00:01, 24.08 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  73%|███████▎  | 119/162 [00:07<00:01, 24.08 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  74%|███████▍  | 120/162 [00:07<00:01, 24.08 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  75%|███████▍  | 121/162 [00:07<00:01, 24.08 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  75%|███████▌  | 122/162 [00:07<00:01, 24.33 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  75%|███████▌  | 122/162 [00:07<00:01, 24.33 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  76%|███████▌  | 123/162 [00:07<00:01, 24.33 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  77%|███████▋  | 124/162 [00:07<00:01, 24.33 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  77%|███████▋  | 125/162 [00:07<00:01, 24.43 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  77%|███████▋  | 125/162 [00:07<00:01, 24.43 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  78%|███████▊  | 126/162 [00:07<00:01, 24.43 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  78%|███████▊  | 127/162 [00:07<00:01, 24.43 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[A
+Dl Size...:  79%|███████▉  | 128/162 [00:07<00:01, 24.57 MiB/s][ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  79%|███████▉  | 128/162 [00:07<00:01, 24.57 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:07<?, ? url/s]
+Dl Size...:  80%|███████▉  | 129/162 [00:07<00:01, 24.57 MiB/s][A
+
+Extraction completed...: 0 file [00:07, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  80%|████████  | 130/162 [00:08<00:01, 24.57 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  81%|████████  | 131/162 [00:08<00:01, 24.78 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  81%|████████  | 131/162 [00:08<00:01, 24.78 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  81%|████████▏ | 132/162 [00:08<00:01, 24.78 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  82%|████████▏ | 133/162 [00:08<00:01, 24.78 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  83%|████████▎ | 134/162 [00:08<00:01, 24.73 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  83%|████████▎ | 134/162 [00:08<00:01, 24.73 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  83%|████████▎ | 135/162 [00:08<00:01, 24.73 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  84%|████████▍ | 136/162 [00:08<00:01, 24.73 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  85%|████████▍ | 137/162 [00:08<00:01, 24.93 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  85%|████████▍ | 137/162 [00:08<00:01, 24.93 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  85%|████████▌ | 138/162 [00:08<00:00, 24.93 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  86%|████████▌ | 139/162 [00:08<00:00, 24.93 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  86%|████████▋ | 140/162 [00:08<00:00, 24.75 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  86%|████████▋ | 140/162 [00:08<00:00, 24.75 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  87%|████████▋ | 141/162 [00:08<00:00, 24.75 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  88%|████████▊ | 142/162 [00:08<00:00, 24.75 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  88%|████████▊ | 143/162 [00:08<00:00, 25.22 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  88%|████████▊ | 143/162 [00:08<00:00, 25.22 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  89%|████████▉ | 144/162 [00:08<00:00, 25.22 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  90%|████████▉ | 145/162 [00:08<00:00, 25.22 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  90%|█████████ | 146/162 [00:08<00:00, 25.04 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  90%|█████████ | 146/162 [00:08<00:00, 25.04 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  91%|█████████ | 147/162 [00:08<00:00, 25.04 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  91%|█████████▏| 148/162 [00:08<00:00, 25.04 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  92%|█████████▏| 149/162 [00:08<00:00, 25.05 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  92%|█████████▏| 149/162 [00:08<00:00, 25.05 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  93%|█████████▎| 150/162 [00:08<00:00, 25.05 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  93%|█████████▎| 151/162 [00:08<00:00, 25.05 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  94%|█████████▍| 152/162 [00:08<00:00, 25.23 MiB/s][ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  94%|█████████▍| 152/162 [00:08<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  94%|█████████▍| 153/162 [00:08<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:08<?, ? url/s]
+Dl Size...:  95%|█████████▌| 154/162 [00:08<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:08, ? file/s][A[A
+Dl Size...:  96%|█████████▌| 155/162 [00:09<00:00, 25.23 MiB/s][ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  96%|█████████▌| 155/162 [00:09<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  96%|█████████▋| 156/162 [00:09<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  97%|█████████▋| 157/162 [00:09<00:00, 25.23 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[A
+Dl Size...:  98%|█████████▊| 158/162 [00:09<00:00, 25.44 MiB/s][ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  98%|█████████▊| 158/162 [00:09<00:00, 25.44 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  98%|█████████▊| 159/162 [00:09<00:00, 25.44 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  99%|█████████▉| 160/162 [00:09<00:00, 25.44 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[A
+Dl Size...:  99%|█████████▉| 161/162 [00:09<00:00, 25.29 MiB/s][ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...:  99%|█████████▉| 161/162 [00:09<00:00, 25.29 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:09<?, ? url/s]
+Dl Size...: 100%|██████████| 162/162 [00:09<00:00, 25.29 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:09<00:00,  9.32s/ url]Dl Completed...: 100%|██████████| 1/1 [00:09<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [00:09<00:00, 25.29 MiB/s][A
+
+Extraction completed...: 0 file [00:09, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:09<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [00:09<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/1 [00:09<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:10<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [00:10<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/2 [00:10<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:10<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [00:10<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/3 [00:10<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:10<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [00:10<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/4 [00:10<?, ? file/s][A[A
+Dl Size...: 100%|██████████| 162/162 [05:53<00:00, 25.29 MiB/s][ADl Completed...: 100%|██████████| 1/1 [05:53<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [05:53<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/5 [05:53<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [05:53<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [05:53<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/6 [05:53<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/7 [10:18<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:   0%|          | 0/8 [10:18<?, ? file/s][A[A
+
+Extraction completed...:  12%|█▎        | 1/8 [10:18<1:12:11, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  12%|█▎        | 1/8 [10:18<1:12:11, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  25%|██▌       | 2/8 [10:18<1:01:52, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  38%|███▊      | 3/8 [10:18<51:33, 618.74s/ file]  [A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  50%|█████     | 4/8 [10:18<41:14, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  62%|██████▎   | 5/8 [10:18<30:56, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  75%|███████▌  | 6/8 [10:18<20:37, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...:  88%|████████▊ | 7/8 [10:18<10:18, 618.74s/ file][A[ADl Completed...: 100%|██████████| 1/1 [10:18<00:00,  9.32s/ url]
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00, 25.29 MiB/s][A
+
+Extraction completed...: 100%|██████████| 8/8 [10:18<00:00, 618.74s/ file][A[AExtraction completed...: 100%|██████████| 8/8 [10:18<00:00, 77.35s/ file] 
+Dl Size...: 100%|██████████| 162/162 [10:18<00:00,  3.82s/ MiB]
+Dl Completed...: 100%|██████████| 1/1 [10:18<00:00, 618.77s/ url]
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][A
+Generating train examples...: 1163 examples [00:01, 1162.89 examples/s][A
+Generating train examples...: 3729 examples [00:02, 1988.08 examples/s][A
+Generating train examples...: 6188 examples [00:03, 2202.91 examples/s][A
+Generating train examples...: 8756 examples [00:04, 2346.83 examples/s][A
+Generating train examples...: 11226 examples [00:05, 2391.18 examples/s][A
+Generating train examples...: 13763 examples [00:06, 2440.48 examples/s][A
+Generating train examples...: 16366 examples [00:07, 2493.34 examples/s][A
+Generating train examples...: 18960 examples [00:08, 2525.36 examples/s][A
+Generating train examples...: 21486 examples [00:09, 2518.49 examples/s][A
+Generating train examples...: 24085 examples [00:10, 2543.11 examples/s][A
+Generating train examples...: 26666 examples [00:11, 2554.51 examples/s][A
+Generating train examples...: 29262 examples [00:12, 2567.02 examples/s][A
+Generating train examples...: 31830 examples [00:13, 2545.24 examples/s][A
+Generating train examples...: 34426 examples [00:14, 2560.43 examples/s][A
+Generating train examples...: 37030 examples [00:15, 2573.49 examples/s][A
+Generating train examples...: 39620 examples [00:16, 2578.27 examples/s][A
+Generating train examples...: 42199 examples [00:17, 2554.48 examples/s][A
+Generating train examples...: 44793 examples [00:18, 2566.09 examples/s][A
+Generating train examples...: 47398 examples [00:19, 2577.55 examples/s][A
+Generating train examples...: 49976 examples [00:20, 2546.17 examples/s][A
+                                                                        [A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*...:   0%|          | 0/50000 [00:00<?, ? examples/s][A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*...:  17%|█▋        | 8651/50000 [00:00<00:00, 86502.86 examples/s][A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*...:  38%|███▊      | 19174/50000 [00:00<00:00, 97512.90 examples/s][A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*...:  59%|█████▉    | 29657/50000 [00:00<00:00, 100841.41 examples/s][A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*...:  80%|████████  | 40181/50000 [00:00<00:00, 102575.08 examples/s][A
+                                                                                                                                                             [AI0930 20:40:11.437053 139779172703616 writer.py:304] Done writing /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-train.tfrecord*. Number of examples: 50000 (shards: [50000])
+Generating splits...:  50%|█████     | 1/2 [00:20<00:20, 20.63s/ splits]
+Generating test examples...: 0 examples [00:00, ? examples/s][A
+Generating test examples...: 2236 examples [00:01, 2235.45 examples/s][A
+Generating test examples...: 4713 examples [00:02, 2377.05 examples/s][A
+Generating test examples...: 7237 examples [00:03, 2444.09 examples/s][A
+Generating test examples...: 9682 examples [00:04, 2421.41 examples/s][A
+                                                                      [A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-test.tfrecord*...:   0%|          | 0/10000 [00:00<?, ? examples/s][A
+Shuffling /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-test.tfrecord*...: 100%|██████████| 10000/10000 [00:00<00:00, 99973.16 examples/s][A
+                                                                                                                                                           [AI0930 20:40:15.716176 139779172703616 writer.py:304] Done writing /scratch1/szhang01/tfds/cifar10/3.0.2.incompleteRC3JJ4/cifar10-test.tfrecord*. Number of examples: 10000 (shards: [10000])
+Generating splits...: 100%|██████████| 2/2 [00:24<00:00, 11.01s/ splits]                                                                        I0930 20:40:15.866005 139779172703616 logging_logger.py:49] Constructing tf.data.Dataset cifar10 for split train[0:50000], from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 20:40:15.869030 139779172703616 dataset_info.py:599] Load dataset info from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 20:40:15.872687 139779172703616 dataset_builder.py:573] Reusing dataset cifar10 (/scratch1/szhang01/tfds/cifar10/3.0.2)
+I0930 20:40:15.906670 139779172703616 logging_logger.py:49] Constructing tf.data.Dataset cifar10 for split test, from /scratch1/szhang01/tfds/cifar10/3.0.2
+I0930 20:40:15.907928 139779172703616 dataset_source.py:196] Used test set instead of validation set.
+/home1/szhang01/.conda/envs/sam-env/lib/python3.9/site-packages/flax/deprecated/nn/base.py:273: DeprecationWarning: The `flax.nn` module is Deprecated, use `flax.linen` instead. Learn more and find an upgrade guide at https://github.com/google/flax/blob/main/flax/linen/README.md
+  warnings.warn("The `flax.nn` module is Deprecated, use `flax.linen` instead. Learn more and find an upgrade guide at https://github.com/google/flax/blob/main/flax/linen/README.md", DeprecationWarning)
+I0930 20:40:21.823942 139779172703616 flax_training.py:812] Starting training from scratch.
+2026-09-30 20:40:40.670991: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 20:40:40.703689: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 20:40:40.724348: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 128 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+I0930 20:45:07.499419 139779172703616 flax_training.py:756] Whole training step done in 285.6480429172516 (390 steps)
+I0930 20:45:07.513796 139779172703616 flax_training.py:858] Epoch 0 finished in 285.66s.
+I0930 20:49:26.151958 139779172703616 flax_training.py:756] Whole training step done in 258.6378490924835 (390 steps)
+I0930 20:49:26.156652 139779172703616 flax_training.py:858] Epoch 1 finished in 258.64s.
+I0930 20:53:44.761564 139779172703616 flax_training.py:756] Whole training step done in 258.60464906692505 (390 steps)
+I0930 20:53:44.766369 139779172703616 flax_training.py:858] Epoch 2 finished in 258.61s.
+I0930 20:58:03.416255 139779172703616 flax_training.py:756] Whole training step done in 258.64963030815125 (390 steps)
+I0930 20:58:03.421023 139779172703616 flax_training.py:858] Epoch 3 finished in 258.65s.
+I0930 21:02:22.070517 139779172703616 flax_training.py:756] Whole training step done in 258.6492450237274 (390 steps)
+I0930 21:02:22.088880 139779172703616 flax_training.py:858] Epoch 4 finished in 258.67s.
+I0930 21:02:22.088968 139779172703616 flax_training.py:863] Evaluating at end of epoch 4 (0-indexed)
+2026-09-30 21:02:23.228167: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 21:02:23.236726: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 21:02:23.244348: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 32 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 21:02:36.928660: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 160 spatial: 32 32  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 160 input_feature_map_count: 160 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 21:02:36.934022: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 320 spatial: 16 16  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 320 input_feature_map_count: 320 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+2026-09-30 21:02:36.939531: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_dnn.cc:5205] Disabling cuDNN frontend for the following convolution:
+  input: {count: 16 feature_map_count: 640 spatial: 8 8  value_min: 0.000000 value_max: 0.000000 layout: BatchDepthYX}
+  filter: {output_feature_map_count: 640 input_feature_map_count: 640 layout: OutputInputYX shape: 3 3 }
+  {zero_padding: 1 1  pad_alignment: default filter_strides: 1 1  dilation_rates: 1 1 }
+  ... because it uses an identity activation.
+I0930 21:09:08.311270 139779172703616 flax_training.py:897] Evaluated model in 406.22.
+I0930 21:13:27.017206 139779172703616 flax_training.py:756] Whole training step done in 258.70528769493103 (390 steps)
+I0930 21:13:27.022120 139779172703616 flax_training.py:858] Epoch 5 finished in 258.71s.
+I0930 21:17:45.681193 139779172703616 flax_training.py:756] Whole training step done in 258.65879559516907 (390 steps)
+I0930 21:17:45.686525 139779172703616 flax_training.py:858] Epoch 6 finished in 258.66s.
+I0930 21:22:04.391696 139779172703616 flax_training.py:756] Whole training step done in 258.70490765571594 (390 steps)
+I0930 21:22:04.397119 139779172703616 flax_training.py:858] Epoch 7 finished in 258.71s.
+I0930 21:26:23.056778 139779172703616 flax_training.py:756] Whole training step done in 258.6593961715698 (390 steps)
+I0930 21:26:23.061499 139779172703616 flax_training.py:858] Epoch 8 finished in 258.66s.
+I0930 21:30:41.699591 139779172703616 flax_training.py:756] Whole training step done in 258.6378266811371 (390 steps)
+I0930 21:30:41.705498 139779172703616 flax_training.py:858] Epoch 9 finished in 258.64s.
+I0930 21:30:41.705644 139779172703616 flax_training.py:863] Evaluating at end of epoch 9 (0-indexed)
+I0930 21:30:54.191029 139779172703616 flax_training.py:897] Evaluated model in 12.49.
+I0930 21:35:12.889975 139779172703616 flax_training.py:756] Whole training step done in 258.6986207962036 (390 steps)
+I0930 21:35:12.895600 139779172703616 flax_training.py:858] Epoch 10 finished in 258.70s.
+I0930 21:39:31.577556 139779172703616 flax_training.py:756] Whole training step done in 258.6817090511322 (390 steps)
+I0930 21:39:31.582631 139779172703616 flax_training.py:858] Epoch 11 finished in 258.69s.
+I0930 21:43:50.220056 139779172703616 flax_training.py:756] Whole training step done in 258.63717436790466 (390 steps)
+I0930 21:43:50.229402 139779172703616 flax_training.py:858] Epoch 12 finished in 258.65s.
+I0930 21:43:50.277281 139779172703616 checkpoints.py:120] Saving checkpoint at step: 12
+I0930 21:43:51.332895 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_12
+I0930 21:43:51.340375 139779172703616 flax_training.py:909] Saved checkpoint.
+I0930 21:48:09.978665 139779172703616 flax_training.py:756] Whole training step done in 258.6380498409271 (390 steps)
+I0930 21:48:09.983926 139779172703616 flax_training.py:858] Epoch 13 finished in 258.64s.
+I0930 21:52:28.649410 139779172703616 flax_training.py:756] Whole training step done in 258.66498827934265 (390 steps)
+I0930 21:52:28.655335 139779172703616 flax_training.py:858] Epoch 14 finished in 258.67s.
+I0930 21:52:28.655421 139779172703616 flax_training.py:863] Evaluating at end of epoch 14 (0-indexed)
+I0930 21:52:41.128539 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I0930 21:56:59.804083 139779172703616 flax_training.py:756] Whole training step done in 258.67522621154785 (390 steps)
+I0930 21:56:59.809934 139779172703616 flax_training.py:858] Epoch 15 finished in 258.68s.
+I0930 22:01:18.503375 139779172703616 flax_training.py:756] Whole training step done in 258.692978143692 (390 steps)
+I0930 22:01:18.510221 139779172703616 flax_training.py:858] Epoch 16 finished in 258.70s.
+I0930 22:05:37.195210 139779172703616 flax_training.py:756] Whole training step done in 258.68466424942017 (390 steps)
+I0930 22:05:37.199953 139779172703616 flax_training.py:858] Epoch 17 finished in 258.69s.
+I0930 22:09:55.858882 139779172703616 flax_training.py:756] Whole training step done in 258.65866470336914 (390 steps)
+I0930 22:09:55.864119 139779172703616 flax_training.py:858] Epoch 18 finished in 258.66s.
+I0930 22:14:14.532816 139779172703616 flax_training.py:756] Whole training step done in 258.6684350967407 (390 steps)
+I0930 22:14:14.537950 139779172703616 flax_training.py:858] Epoch 19 finished in 258.67s.
+I0930 22:14:14.538034 139779172703616 flax_training.py:863] Evaluating at end of epoch 19 (0-indexed)
+I0930 22:14:26.998919 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I0930 22:18:45.667073 139779172703616 flax_training.py:756] Whole training step done in 258.66783595085144 (390 steps)
+I0930 22:18:45.672572 139779172703616 flax_training.py:858] Epoch 20 finished in 258.67s.
+I0930 22:23:04.352192 139779172703616 flax_training.py:756] Whole training step done in 258.67933416366577 (390 steps)
+I0930 22:23:04.357342 139779172703616 flax_training.py:858] Epoch 21 finished in 258.68s.
+I0930 22:27:22.999406 139779172703616 flax_training.py:756] Whole training step done in 258.64179515838623 (390 steps)
+I0930 22:27:23.004491 139779172703616 flax_training.py:858] Epoch 22 finished in 258.65s.
+I0930 22:31:41.680113 139779172703616 flax_training.py:756] Whole training step done in 258.6753525733948 (390 steps)
+I0930 22:31:41.684735 139779172703616 flax_training.py:858] Epoch 23 finished in 258.68s.
+I0930 22:36:00.333788 139779172703616 flax_training.py:756] Whole training step done in 258.64878726005554 (390 steps)
+I0930 22:36:00.339459 139779172703616 flax_training.py:858] Epoch 24 finished in 258.65s.
+I0930 22:36:00.339567 139779172703616 flax_training.py:863] Evaluating at end of epoch 24 (0-indexed)
+I0930 22:36:12.810694 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I0930 22:40:31.425399 139779172703616 flax_training.py:756] Whole training step done in 258.6143856048584 (390 steps)
+I0930 22:40:31.430495 139779172703616 flax_training.py:858] Epoch 25 finished in 258.62s.
+I0930 22:44:50.074675 139779172703616 flax_training.py:756] Whole training step done in 258.64392375946045 (390 steps)
+I0930 22:44:50.079873 139779172703616 flax_training.py:858] Epoch 26 finished in 258.65s.
+I0930 22:44:50.092161 139779172703616 checkpoints.py:120] Saving checkpoint at step: 26
+I0930 22:44:50.927052 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_26
+I0930 22:44:50.934510 139779172703616 flax_training.py:909] Saved checkpoint.
+I0930 22:49:09.606171 139779172703616 flax_training.py:756] Whole training step done in 258.6713149547577 (390 steps)
+I0930 22:49:09.612144 139779172703616 flax_training.py:858] Epoch 27 finished in 258.68s.
+I0930 22:53:28.283250 139779172703616 flax_training.py:756] Whole training step done in 258.6708297729492 (390 steps)
+I0930 22:53:28.288079 139779172703616 flax_training.py:858] Epoch 28 finished in 258.68s.
+I0930 22:57:46.957371 139779172703616 flax_training.py:756] Whole training step done in 258.66900515556335 (390 steps)
+I0930 22:57:46.962538 139779172703616 flax_training.py:858] Epoch 29 finished in 258.67s.
+I0930 22:57:46.962669 139779172703616 flax_training.py:863] Evaluating at end of epoch 29 (0-indexed)
+I0930 22:57:59.425985 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I0930 23:02:18.042773 139779172703616 flax_training.py:756] Whole training step done in 258.61648631095886 (390 steps)
+I0930 23:02:18.047615 139779172703616 flax_training.py:858] Epoch 30 finished in 258.62s.
+I0930 23:06:36.672779 139779172703616 flax_training.py:756] Whole training step done in 258.62490820884705 (390 steps)
+I0930 23:06:36.677511 139779172703616 flax_training.py:858] Epoch 31 finished in 258.63s.
+I0930 23:10:55.284874 139779172703616 flax_training.py:756] Whole training step done in 258.6071090698242 (390 steps)
+I0930 23:10:55.289392 139779172703616 flax_training.py:858] Epoch 32 finished in 258.61s.
+I0930 23:15:13.921291 139779172703616 flax_training.py:756] Whole training step done in 258.6316387653351 (390 steps)
+I0930 23:15:13.927720 139779172703616 flax_training.py:858] Epoch 33 finished in 258.64s.
+I0930 23:19:32.596104 139779172703616 flax_training.py:756] Whole training step done in 258.6680006980896 (390 steps)
+I0930 23:19:32.604298 139779172703616 flax_training.py:858] Epoch 34 finished in 258.68s.
+I0930 23:19:32.604439 139779172703616 flax_training.py:863] Evaluating at end of epoch 34 (0-indexed)
+I0930 23:19:45.118334 139779172703616 flax_training.py:897] Evaluated model in 12.51.
+I0930 23:24:03.794524 139779172703616 flax_training.py:756] Whole training step done in 258.6756088733673 (390 steps)
+I0930 23:24:03.800193 139779172703616 flax_training.py:858] Epoch 35 finished in 258.68s.
+I0930 23:28:22.457022 139779172703616 flax_training.py:756] Whole training step done in 258.6565432548523 (390 steps)
+I0930 23:28:22.463541 139779172703616 flax_training.py:858] Epoch 36 finished in 258.66s.
+I0930 23:32:41.155827 139779172703616 flax_training.py:756] Whole training step done in 258.6919512748718 (390 steps)
+I0930 23:32:41.160894 139779172703616 flax_training.py:858] Epoch 37 finished in 258.70s.
+I0930 23:36:59.825999 139779172703616 flax_training.py:756] Whole training step done in 258.6648359298706 (390 steps)
+I0930 23:36:59.831331 139779172703616 flax_training.py:858] Epoch 38 finished in 258.67s.
+I0930 23:41:18.501652 139779172703616 flax_training.py:756] Whole training step done in 258.6700613498688 (390 steps)
+I0930 23:41:18.506628 139779172703616 flax_training.py:858] Epoch 39 finished in 258.68s.
+I0930 23:41:18.506711 139779172703616 flax_training.py:863] Evaluating at end of epoch 39 (0-indexed)
+I0930 23:41:30.975260 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I0930 23:45:49.660478 139779172703616 flax_training.py:756] Whole training step done in 258.684690952301 (390 steps)
+I0930 23:45:49.665926 139779172703616 flax_training.py:858] Epoch 40 finished in 258.69s.
+I0930 23:45:49.681052 139779172703616 checkpoints.py:120] Saving checkpoint at step: 40
+I0930 23:52:41.412672 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_40
+I0930 23:52:41.413082 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_12
+I0930 23:52:41.474787 139779172703616 flax_training.py:909] Saved checkpoint.
+I0930 23:57:00.170986 139779172703616 flax_training.py:756] Whole training step done in 258.69584798812866 (390 steps)
+I0930 23:57:00.177147 139779172703616 flax_training.py:858] Epoch 41 finished in 258.70s.
+I1001 00:01:18.812923 139779172703616 flax_training.py:756] Whole training step done in 258.63527488708496 (390 steps)
+I1001 00:01:18.820770 139779172703616 flax_training.py:858] Epoch 42 finished in 258.64s.
+I1001 00:05:37.502456 139779172703616 flax_training.py:756] Whole training step done in 258.68133544921875 (390 steps)
+I1001 00:05:37.508199 139779172703616 flax_training.py:858] Epoch 43 finished in 258.69s.
+I1001 00:09:56.162623 139779172703616 flax_training.py:756] Whole training step done in 258.654091835022 (390 steps)
+I1001 00:09:56.167423 139779172703616 flax_training.py:858] Epoch 44 finished in 258.66s.
+I1001 00:09:56.167506 139779172703616 flax_training.py:863] Evaluating at end of epoch 44 (0-indexed)
+I1001 00:10:08.632649 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 00:14:27.258482 139779172703616 flax_training.py:756] Whole training step done in 258.6255328655243 (390 steps)
+I1001 00:14:27.263241 139779172703616 flax_training.py:858] Epoch 45 finished in 258.63s.
+I1001 00:18:45.915209 139779172703616 flax_training.py:756] Whole training step done in 258.65170431137085 (390 steps)
+I1001 00:18:45.920670 139779172703616 flax_training.py:858] Epoch 46 finished in 258.66s.
+I1001 00:23:04.564668 139779172703616 flax_training.py:756] Whole training step done in 258.6437358856201 (390 steps)
+I1001 00:23:04.569360 139779172703616 flax_training.py:858] Epoch 47 finished in 258.65s.
+I1001 00:27:23.197117 139779172703616 flax_training.py:756] Whole training step done in 258.62749004364014 (390 steps)
+I1001 00:27:23.202110 139779172703616 flax_training.py:858] Epoch 48 finished in 258.63s.
+I1001 00:31:41.847417 139779172703616 flax_training.py:756] Whole training step done in 258.6450273990631 (390 steps)
+I1001 00:31:41.852847 139779172703616 flax_training.py:858] Epoch 49 finished in 258.65s.
+I1001 00:31:41.852947 139779172703616 flax_training.py:863] Evaluating at end of epoch 49 (0-indexed)
+I1001 00:31:54.331793 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 00:36:12.937501 139779172703616 flax_training.py:756] Whole training step done in 258.60541129112244 (390 steps)
+I1001 00:36:12.942205 139779172703616 flax_training.py:858] Epoch 50 finished in 258.61s.
+I1001 00:40:31.584858 139779172703616 flax_training.py:756] Whole training step done in 258.6424231529236 (390 steps)
+I1001 00:40:31.589058 139779172703616 flax_training.py:858] Epoch 51 finished in 258.65s.
+I1001 00:44:50.228638 139779172703616 flax_training.py:756] Whole training step done in 258.6393458843231 (390 steps)
+I1001 00:44:50.233504 139779172703616 flax_training.py:858] Epoch 52 finished in 258.64s.
+I1001 00:49:08.917163 139779172703616 flax_training.py:756] Whole training step done in 258.68338441848755 (390 steps)
+I1001 00:49:08.922448 139779172703616 flax_training.py:858] Epoch 53 finished in 258.69s.
+I1001 00:53:27.597711 139779172703616 flax_training.py:756] Whole training step done in 258.6749029159546 (390 steps)
+I1001 00:53:27.653475 139779172703616 flax_training.py:858] Epoch 54 finished in 258.73s.
+I1001 00:53:27.653560 139779172703616 flax_training.py:863] Evaluating at end of epoch 54 (0-indexed)
+I1001 00:56:03.152791 139779172703616 flax_training.py:897] Evaluated model in 155.50.
+I1001 00:56:03.170515 139779172703616 checkpoints.py:120] Saving checkpoint at step: 54
+I1001 00:56:03.990758 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_54
+I1001 00:56:03.990929 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_26
+I1001 00:56:04.000236 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 01:00:22.645325 139779172703616 flax_training.py:756] Whole training step done in 258.6447820663452 (390 steps)
+I1001 01:00:22.650503 139779172703616 flax_training.py:858] Epoch 55 finished in 258.65s.
+I1001 01:04:41.268731 139779172703616 flax_training.py:756] Whole training step done in 258.61798071861267 (390 steps)
+I1001 01:04:41.273349 139779172703616 flax_training.py:858] Epoch 56 finished in 258.62s.
+I1001 01:08:59.870805 139779172703616 flax_training.py:756] Whole training step done in 258.59729075431824 (390 steps)
+I1001 01:08:59.874684 139779172703616 flax_training.py:858] Epoch 57 finished in 258.60s.
+I1001 01:13:18.496010 139779172703616 flax_training.py:756] Whole training step done in 258.6210968494415 (390 steps)
+I1001 01:13:18.500705 139779172703616 flax_training.py:858] Epoch 58 finished in 258.63s.
+I1001 01:17:37.093931 139779172703616 flax_training.py:756] Whole training step done in 258.5929961204529 (390 steps)
+I1001 01:17:37.098421 139779172703616 flax_training.py:858] Epoch 59 finished in 258.60s.
+I1001 01:17:37.098501 139779172703616 flax_training.py:863] Evaluating at end of epoch 59 (0-indexed)
+I1001 01:17:49.550048 139779172703616 flax_training.py:897] Evaluated model in 12.45.
+I1001 01:22:08.153614 139779172703616 flax_training.py:756] Whole training step done in 258.6031286716461 (390 steps)
+I1001 01:22:08.159407 139779172703616 flax_training.py:858] Epoch 60 finished in 258.61s.
+I1001 01:26:26.794000 139779172703616 flax_training.py:756] Whole training step done in 258.63426756858826 (390 steps)
+I1001 01:26:26.798814 139779172703616 flax_training.py:858] Epoch 61 finished in 258.64s.
+I1001 01:30:45.406313 139779172703616 flax_training.py:756] Whole training step done in 258.6072461605072 (390 steps)
+I1001 01:30:45.410781 139779172703616 flax_training.py:858] Epoch 62 finished in 258.61s.
+I1001 01:35:04.000449 139779172703616 flax_training.py:756] Whole training step done in 258.58945322036743 (390 steps)
+I1001 01:35:04.004699 139779172703616 flax_training.py:858] Epoch 63 finished in 258.59s.
+I1001 01:39:22.599608 139779172703616 flax_training.py:756] Whole training step done in 258.5946979522705 (390 steps)
+I1001 01:39:22.604177 139779172703616 flax_training.py:858] Epoch 64 finished in 258.60s.
+I1001 01:39:22.604252 139779172703616 flax_training.py:863] Evaluating at end of epoch 64 (0-indexed)
+I1001 01:39:35.069032 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 01:43:53.677478 139779172703616 flax_training.py:756] Whole training step done in 258.60800886154175 (390 steps)
+I1001 01:43:53.681824 139779172703616 flax_training.py:858] Epoch 65 finished in 258.61s.
+I1001 01:48:12.290360 139779172703616 flax_training.py:756] Whole training step done in 258.60829401016235 (390 steps)
+I1001 01:48:12.295140 139779172703616 flax_training.py:858] Epoch 66 finished in 258.61s.
+I1001 01:52:30.913470 139779172703616 flax_training.py:756] Whole training step done in 258.61809754371643 (390 steps)
+I1001 01:52:30.917861 139779172703616 flax_training.py:858] Epoch 67 finished in 258.62s.
+I1001 01:56:49.524782 139779172703616 flax_training.py:756] Whole training step done in 258.6066827774048 (390 steps)
+I1001 01:56:49.530781 139779172703616 flax_training.py:858] Epoch 68 finished in 258.61s.
+I1001 01:56:49.543062 139779172703616 checkpoints.py:120] Saving checkpoint at step: 68
+I1001 02:05:20.804847 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_68
+I1001 02:05:20.805280 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_40
+I1001 02:05:20.875290 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 02:09:39.563738 139779172703616 flax_training.py:756] Whole training step done in 258.687219619751 (390 steps)
+I1001 02:09:39.572120 139779172703616 flax_training.py:858] Epoch 69 finished in 258.70s.
+I1001 02:09:39.572253 139779172703616 flax_training.py:863] Evaluating at end of epoch 69 (0-indexed)
+I1001 02:09:52.052538 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 02:14:10.673356 139779172703616 flax_training.py:756] Whole training step done in 258.61956453323364 (390 steps)
+I1001 02:14:10.680490 139779172703616 flax_training.py:858] Epoch 70 finished in 258.63s.
+I1001 02:18:29.296136 139779172703616 flax_training.py:756] Whole training step done in 258.615394115448 (390 steps)
+I1001 02:18:29.300572 139779172703616 flax_training.py:858] Epoch 71 finished in 258.62s.
+I1001 02:22:47.906927 139779172703616 flax_training.py:756] Whole training step done in 258.6061339378357 (390 steps)
+I1001 02:22:47.911085 139779172703616 flax_training.py:858] Epoch 72 finished in 258.61s.
+I1001 02:27:06.520119 139779172703616 flax_training.py:756] Whole training step done in 258.6088125705719 (390 steps)
+I1001 02:27:06.524318 139779172703616 flax_training.py:858] Epoch 73 finished in 258.61s.
+I1001 02:31:25.126504 139779172703616 flax_training.py:756] Whole training step done in 258.60195565223694 (390 steps)
+I1001 02:31:25.131691 139779172703616 flax_training.py:858] Epoch 74 finished in 258.61s.
+I1001 02:31:25.131840 139779172703616 flax_training.py:863] Evaluating at end of epoch 74 (0-indexed)
+I1001 02:31:37.607402 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 02:35:56.196648 139779172703616 flax_training.py:756] Whole training step done in 258.58896112442017 (390 steps)
+I1001 02:35:56.201453 139779172703616 flax_training.py:858] Epoch 75 finished in 258.59s.
+I1001 02:40:14.827349 139779172703616 flax_training.py:756] Whole training step done in 258.6256649494171 (390 steps)
+I1001 02:40:14.831730 139779172703616 flax_training.py:858] Epoch 76 finished in 258.63s.
+I1001 02:44:33.417320 139779172703616 flax_training.py:756] Whole training step done in 258.5853497982025 (390 steps)
+I1001 02:44:33.423524 139779172703616 flax_training.py:858] Epoch 77 finished in 258.59s.
+I1001 02:48:52.023505 139779172703616 flax_training.py:756] Whole training step done in 258.5989327430725 (390 steps)
+I1001 02:48:52.031751 139779172703616 flax_training.py:858] Epoch 78 finished in 258.61s.
+I1001 02:53:10.658920 139779172703616 flax_training.py:756] Whole training step done in 258.6268730163574 (390 steps)
+I1001 02:53:10.663650 139779172703616 flax_training.py:858] Epoch 79 finished in 258.63s.
+I1001 02:53:10.663729 139779172703616 flax_training.py:863] Evaluating at end of epoch 79 (0-indexed)
+I1001 02:53:23.141157 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 02:57:41.758128 139779172703616 flax_training.py:756] Whole training step done in 258.6166784763336 (390 steps)
+I1001 02:57:41.762772 139779172703616 flax_training.py:858] Epoch 80 finished in 258.62s.
+I1001 03:02:00.361124 139779172703616 flax_training.py:756] Whole training step done in 258.5981047153473 (390 steps)
+I1001 03:02:00.366656 139779172703616 flax_training.py:858] Epoch 81 finished in 258.60s.
+I1001 03:06:18.978633 139779172703616 flax_training.py:756] Whole training step done in 258.61170721054077 (390 steps)
+I1001 03:06:18.992354 139779172703616 flax_training.py:858] Epoch 82 finished in 258.63s.
+I1001 03:06:19.005763 139779172703616 checkpoints.py:120] Saving checkpoint at step: 82
+I1001 03:11:22.595922 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_82
+I1001 03:11:22.596342 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_54
+I1001 03:11:22.605417 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 03:15:41.249415 139779172703616 flax_training.py:756] Whole training step done in 258.64375162124634 (390 steps)
+I1001 03:15:41.254963 139779172703616 flax_training.py:858] Epoch 83 finished in 258.65s.
+I1001 03:19:59.881719 139779172703616 flax_training.py:756] Whole training step done in 258.6265320777893 (390 steps)
+I1001 03:19:59.904340 139779172703616 flax_training.py:858] Epoch 84 finished in 258.65s.
+I1001 03:19:59.904477 139779172703616 flax_training.py:863] Evaluating at end of epoch 84 (0-indexed)
+I1001 03:20:34.159681 139779172703616 flax_training.py:897] Evaluated model in 34.26.
+I1001 03:24:52.790563 139779172703616 flax_training.py:756] Whole training step done in 258.63060188293457 (390 steps)
+I1001 03:24:52.810096 139779172703616 flax_training.py:858] Epoch 85 finished in 258.65s.
+I1001 03:29:11.412644 139779172703616 flax_training.py:756] Whole training step done in 258.6015930175781 (390 steps)
+I1001 03:29:11.421332 139779172703616 flax_training.py:858] Epoch 86 finished in 258.61s.
+I1001 03:33:30.037672 139779172703616 flax_training.py:756] Whole training step done in 258.6160476207733 (390 steps)
+I1001 03:33:30.042266 139779172703616 flax_training.py:858] Epoch 87 finished in 258.62s.
+I1001 03:37:48.654717 139779172703616 flax_training.py:756] Whole training step done in 258.6122009754181 (390 steps)
+I1001 03:37:48.658893 139779172703616 flax_training.py:858] Epoch 88 finished in 258.62s.
+I1001 03:42:07.272129 139779172703616 flax_training.py:756] Whole training step done in 258.61299991607666 (390 steps)
+I1001 03:42:07.276749 139779172703616 flax_training.py:858] Epoch 89 finished in 258.62s.
+I1001 03:42:07.276823 139779172703616 flax_training.py:863] Evaluating at end of epoch 89 (0-indexed)
+I1001 03:42:19.752304 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 03:46:38.367836 139779172703616 flax_training.py:756] Whole training step done in 258.6152415275574 (390 steps)
+I1001 03:46:38.372487 139779172703616 flax_training.py:858] Epoch 90 finished in 258.62s.
+I1001 03:50:56.997925 139779172703616 flax_training.py:756] Whole training step done in 258.62520265579224 (390 steps)
+I1001 03:50:57.002437 139779172703616 flax_training.py:858] Epoch 91 finished in 258.63s.
+I1001 03:55:15.625439 139779172703616 flax_training.py:756] Whole training step done in 258.6227517127991 (390 steps)
+I1001 03:55:15.629898 139779172703616 flax_training.py:858] Epoch 92 finished in 258.63s.
+I1001 03:59:34.242719 139779172703616 flax_training.py:756] Whole training step done in 258.6125786304474 (390 steps)
+I1001 03:59:34.247152 139779172703616 flax_training.py:858] Epoch 93 finished in 258.62s.
+I1001 04:03:52.858905 139779172703616 flax_training.py:756] Whole training step done in 258.611519575119 (390 steps)
+I1001 04:03:52.863229 139779172703616 flax_training.py:858] Epoch 94 finished in 258.62s.
+I1001 04:03:52.863310 139779172703616 flax_training.py:863] Evaluating at end of epoch 94 (0-indexed)
+I1001 04:04:05.319628 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 04:08:23.925270 139779172703616 flax_training.py:756] Whole training step done in 258.605340719223 (390 steps)
+I1001 04:08:23.930133 139779172703616 flax_training.py:858] Epoch 95 finished in 258.61s.
+I1001 04:12:42.529983 139779172703616 flax_training.py:756] Whole training step done in 258.59961557388306 (390 steps)
+I1001 04:12:42.535006 139779172703616 flax_training.py:858] Epoch 96 finished in 258.60s.
+I1001 04:12:42.548184 139779172703616 checkpoints.py:120] Saving checkpoint at step: 96
+I1001 04:20:00.991333 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_96
+I1001 04:20:00.991707 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_68
+I1001 04:20:01.001398 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 04:24:19.638317 139779172703616 flax_training.py:756] Whole training step done in 258.63666582107544 (390 steps)
+I1001 04:24:19.643215 139779172703616 flax_training.py:858] Epoch 97 finished in 258.64s.
+I1001 04:28:38.257383 139779172703616 flax_training.py:756] Whole training step done in 258.61391735076904 (390 steps)
+I1001 04:28:38.261685 139779172703616 flax_training.py:858] Epoch 98 finished in 258.62s.
+I1001 04:32:56.860940 139779172703616 flax_training.py:756] Whole training step done in 258.5990209579468 (390 steps)
+I1001 04:32:56.865890 139779172703616 flax_training.py:858] Epoch 99 finished in 258.60s.
+I1001 04:32:56.865977 139779172703616 flax_training.py:863] Evaluating at end of epoch 99 (0-indexed)
+I1001 04:33:09.326953 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 04:37:27.940348 139779172703616 flax_training.py:756] Whole training step done in 258.61311531066895 (390 steps)
+I1001 04:37:27.944629 139779172703616 flax_training.py:858] Epoch 100 finished in 258.62s.
+I1001 04:41:46.550862 139779172703616 flax_training.py:756] Whole training step done in 258.6060175895691 (390 steps)
+I1001 04:41:46.555842 139779172703616 flax_training.py:858] Epoch 101 finished in 258.61s.
+I1001 04:46:05.184264 139779172703616 flax_training.py:756] Whole training step done in 258.628160238266 (390 steps)
+I1001 04:46:05.188640 139779172703616 flax_training.py:858] Epoch 102 finished in 258.63s.
+I1001 04:50:23.788454 139779172703616 flax_training.py:756] Whole training step done in 258.59959840774536 (390 steps)
+I1001 04:50:23.793051 139779172703616 flax_training.py:858] Epoch 103 finished in 258.60s.
+I1001 04:54:42.367959 139779172703616 flax_training.py:756] Whole training step done in 258.5746784210205 (390 steps)
+I1001 04:54:42.372159 139779172703616 flax_training.py:858] Epoch 104 finished in 258.58s.
+I1001 04:54:42.372234 139779172703616 flax_training.py:863] Evaluating at end of epoch 104 (0-indexed)
+I1001 04:54:54.819944 139779172703616 flax_training.py:897] Evaluated model in 12.45.
+I1001 04:59:13.421109 139779172703616 flax_training.py:756] Whole training step done in 258.6008870601654 (390 steps)
+I1001 04:59:13.425622 139779172703616 flax_training.py:858] Epoch 105 finished in 258.61s.
+I1001 05:03:32.025876 139779172703616 flax_training.py:756] Whole training step done in 258.60001015663147 (390 steps)
+I1001 05:03:32.030813 139779172703616 flax_training.py:858] Epoch 106 finished in 258.61s.
+I1001 05:07:50.645487 139779172703616 flax_training.py:756] Whole training step done in 258.61443543434143 (390 steps)
+I1001 05:07:50.649887 139779172703616 flax_training.py:858] Epoch 107 finished in 258.62s.
+I1001 05:12:09.265080 139779172703616 flax_training.py:756] Whole training step done in 258.6149628162384 (390 steps)
+I1001 05:12:09.269896 139779172703616 flax_training.py:858] Epoch 108 finished in 258.62s.
+I1001 05:16:27.883526 139779172703616 flax_training.py:756] Whole training step done in 258.61338663101196 (390 steps)
+I1001 05:16:27.888543 139779172703616 flax_training.py:858] Epoch 109 finished in 258.62s.
+I1001 05:16:27.888658 139779172703616 flax_training.py:863] Evaluating at end of epoch 109 (0-indexed)
+I1001 05:16:40.362403 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 05:20:58.967472 139779172703616 flax_training.py:756] Whole training step done in 258.6048047542572 (390 steps)
+I1001 05:20:58.971883 139779172703616 flax_training.py:858] Epoch 110 finished in 258.61s.
+I1001 05:20:58.984131 139779172703616 checkpoints.py:120] Saving checkpoint at step: 110
+I1001 05:21:20.909634 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_110
+I1001 05:21:20.909799 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_82
+I1001 05:21:20.920152 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 05:25:39.558397 139779172703616 flax_training.py:756] Whole training step done in 258.6379363536835 (390 steps)
+I1001 05:25:39.562801 139779172703616 flax_training.py:858] Epoch 111 finished in 258.64s.
+I1001 05:29:58.170674 139779172703616 flax_training.py:756] Whole training step done in 258.60763669013977 (390 steps)
+I1001 05:29:58.175709 139779172703616 flax_training.py:858] Epoch 112 finished in 258.61s.
+I1001 05:34:16.804302 139779172703616 flax_training.py:756] Whole training step done in 258.62833547592163 (390 steps)
+I1001 05:34:16.809135 139779172703616 flax_training.py:858] Epoch 113 finished in 258.63s.
+I1001 05:38:35.419654 139779172703616 flax_training.py:756] Whole training step done in 258.6095142364502 (390 steps)
+I1001 05:38:35.428562 139779172703616 flax_training.py:858] Epoch 114 finished in 258.62s.
+I1001 05:38:35.428680 139779172703616 flax_training.py:863] Evaluating at end of epoch 114 (0-indexed)
+I1001 05:42:01.256598 139779172703616 flax_training.py:897] Evaluated model in 205.83.
+I1001 05:46:19.902861 139779172703616 flax_training.py:756] Whole training step done in 258.645699262619 (390 steps)
+I1001 05:46:19.907877 139779172703616 flax_training.py:858] Epoch 115 finished in 258.65s.
+I1001 05:50:38.532789 139779172703616 flax_training.py:756] Whole training step done in 258.62466526031494 (390 steps)
+I1001 05:50:38.537887 139779172703616 flax_training.py:858] Epoch 116 finished in 258.63s.
+I1001 05:54:57.173430 139779172703616 flax_training.py:756] Whole training step done in 258.6353063583374 (390 steps)
+I1001 05:54:57.177944 139779172703616 flax_training.py:858] Epoch 117 finished in 258.64s.
+I1001 05:59:15.805072 139779172703616 flax_training.py:756] Whole training step done in 258.62617325782776 (390 steps)
+I1001 05:59:15.813882 139779172703616 flax_training.py:858] Epoch 118 finished in 258.64s.
+I1001 06:03:34.423614 139779172703616 flax_training.py:756] Whole training step done in 258.6094591617584 (390 steps)
+I1001 06:03:34.427812 139779172703616 flax_training.py:858] Epoch 119 finished in 258.61s.
+I1001 06:03:34.427887 139779172703616 flax_training.py:863] Evaluating at end of epoch 119 (0-indexed)
+I1001 06:03:46.892845 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 06:08:05.506581 139779172703616 flax_training.py:756] Whole training step done in 258.61342906951904 (390 steps)
+I1001 06:08:05.511362 139779172703616 flax_training.py:858] Epoch 120 finished in 258.62s.
+I1001 06:12:24.120332 139779172703616 flax_training.py:756] Whole training step done in 258.60875034332275 (390 steps)
+I1001 06:12:24.124469 139779172703616 flax_training.py:858] Epoch 121 finished in 258.61s.
+I1001 06:16:42.716878 139779172703616 flax_training.py:756] Whole training step done in 258.5921850204468 (390 steps)
+I1001 06:16:42.721812 139779172703616 flax_training.py:858] Epoch 122 finished in 258.60s.
+I1001 06:21:01.309238 139779172703616 flax_training.py:756] Whole training step done in 258.5872120857239 (390 steps)
+I1001 06:21:01.313073 139779172703616 flax_training.py:858] Epoch 123 finished in 258.59s.
+I1001 06:25:19.904479 139779172703616 flax_training.py:756] Whole training step done in 258.591192483902 (390 steps)
+I1001 06:25:19.908469 139779172703616 flax_training.py:858] Epoch 124 finished in 258.60s.
+I1001 06:25:19.908544 139779172703616 flax_training.py:863] Evaluating at end of epoch 124 (0-indexed)
+I1001 06:25:32.364504 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 06:25:32.376252 139779172703616 checkpoints.py:120] Saving checkpoint at step: 124
+I1001 06:30:11.202146 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_124
+I1001 06:30:11.202551 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_96
+I1001 06:30:11.256491 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 06:34:29.881539 139779172703616 flax_training.py:756] Whole training step done in 258.62473344802856 (390 steps)
+I1001 06:34:29.885831 139779172703616 flax_training.py:858] Epoch 125 finished in 258.63s.
+I1001 06:38:48.499512 139779172703616 flax_training.py:756] Whole training step done in 258.61345624923706 (390 steps)
+I1001 06:38:48.504217 139779172703616 flax_training.py:858] Epoch 126 finished in 258.62s.
+I1001 06:43:07.106764 139779172703616 flax_training.py:756] Whole training step done in 258.6022717952728 (390 steps)
+I1001 06:43:07.111454 139779172703616 flax_training.py:858] Epoch 127 finished in 258.61s.
+I1001 06:47:25.706568 139779172703616 flax_training.py:756] Whole training step done in 258.59487318992615 (390 steps)
+I1001 06:47:25.710582 139779172703616 flax_training.py:858] Epoch 128 finished in 258.60s.
+I1001 06:51:44.314945 139779172703616 flax_training.py:756] Whole training step done in 258.60413575172424 (390 steps)
+I1001 06:51:44.319187 139779172703616 flax_training.py:858] Epoch 129 finished in 258.61s.
+I1001 06:51:44.319262 139779172703616 flax_training.py:863] Evaluating at end of epoch 129 (0-indexed)
+I1001 06:51:56.769650 139779172703616 flax_training.py:897] Evaluated model in 12.45.
+I1001 06:56:15.384279 139779172703616 flax_training.py:756] Whole training step done in 258.61434149742126 (390 steps)
+I1001 06:56:15.388478 139779172703616 flax_training.py:858] Epoch 130 finished in 258.62s.
+I1001 07:00:33.994353 139779172703616 flax_training.py:756] Whole training step done in 258.60570907592773 (390 steps)
+I1001 07:00:33.998137 139779172703616 flax_training.py:858] Epoch 131 finished in 258.61s.
+I1001 07:04:52.622333 139779172703616 flax_training.py:756] Whole training step done in 258.62396264076233 (390 steps)
+I1001 07:04:52.627107 139779172703616 flax_training.py:858] Epoch 132 finished in 258.63s.
+I1001 07:09:11.261112 139779172703616 flax_training.py:756] Whole training step done in 258.6337742805481 (390 steps)
+I1001 07:09:11.266008 139779172703616 flax_training.py:858] Epoch 133 finished in 258.64s.
+I1001 07:13:29.899615 139779172703616 flax_training.py:756] Whole training step done in 258.6333553791046 (390 steps)
+I1001 07:13:29.903928 139779172703616 flax_training.py:858] Epoch 134 finished in 258.64s.
+I1001 07:13:29.904004 139779172703616 flax_training.py:863] Evaluating at end of epoch 134 (0-indexed)
+I1001 07:13:42.357089 139779172703616 flax_training.py:897] Evaluated model in 12.45.
+I1001 07:18:00.971244 139779172703616 flax_training.py:756] Whole training step done in 258.61386466026306 (390 steps)
+I1001 07:18:00.976414 139779172703616 flax_training.py:858] Epoch 135 finished in 258.62s.
+I1001 07:22:19.616472 139779172703616 flax_training.py:756] Whole training step done in 258.63981580734253 (390 steps)
+I1001 07:22:19.621489 139779172703616 flax_training.py:858] Epoch 136 finished in 258.64s.
+I1001 07:26:38.277682 139779172703616 flax_training.py:756] Whole training step done in 258.6559021472931 (390 steps)
+I1001 07:26:38.282516 139779172703616 flax_training.py:858] Epoch 137 finished in 258.66s.
+I1001 07:30:56.900257 139779172703616 flax_training.py:756] Whole training step done in 258.61749601364136 (390 steps)
+I1001 07:30:56.905477 139779172703616 flax_training.py:858] Epoch 138 finished in 258.62s.
+I1001 07:30:56.916387 139779172703616 checkpoints.py:120] Saving checkpoint at step: 138
+I1001 07:38:29.658430 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_138
+I1001 07:38:29.658875 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_110
+I1001 07:38:29.665820 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 07:42:48.307116 139779172703616 flax_training.py:756] Whole training step done in 258.6410565376282 (390 steps)
+I1001 07:42:48.312239 139779172703616 flax_training.py:858] Epoch 139 finished in 258.65s.
+I1001 07:42:48.312363 139779172703616 flax_training.py:863] Evaluating at end of epoch 139 (0-indexed)
+I1001 07:43:00.783685 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 07:47:19.401051 139779172703616 flax_training.py:756] Whole training step done in 258.6170539855957 (390 steps)
+I1001 07:47:19.405858 139779172703616 flax_training.py:858] Epoch 140 finished in 258.62s.
+I1001 07:51:38.032826 139779172703616 flax_training.py:756] Whole training step done in 258.6267440319061 (390 steps)
+I1001 07:51:38.037210 139779172703616 flax_training.py:858] Epoch 141 finished in 258.63s.
+I1001 07:55:56.670999 139779172703616 flax_training.py:756] Whole training step done in 258.6335530281067 (390 steps)
+I1001 07:55:56.675818 139779172703616 flax_training.py:858] Epoch 142 finished in 258.64s.
+I1001 08:00:15.311752 139779172703616 flax_training.py:756] Whole training step done in 258.6357114315033 (390 steps)
+I1001 08:00:15.316272 139779172703616 flax_training.py:858] Epoch 143 finished in 258.64s.
+I1001 08:04:33.925484 139779172703616 flax_training.py:756] Whole training step done in 258.60819935798645 (390 steps)
+I1001 08:04:33.934802 139779172703616 flax_training.py:858] Epoch 144 finished in 258.62s.
+I1001 08:04:33.934921 139779172703616 flax_training.py:863] Evaluating at end of epoch 144 (0-indexed)
+I1001 08:04:46.402694 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 08:09:05.008827 139779172703616 flax_training.py:756] Whole training step done in 258.60582733154297 (390 steps)
+I1001 08:09:05.014138 139779172703616 flax_training.py:858] Epoch 145 finished in 258.61s.
+I1001 08:13:23.639881 139779172703616 flax_training.py:756] Whole training step done in 258.62551259994507 (390 steps)
+I1001 08:13:23.644396 139779172703616 flax_training.py:858] Epoch 146 finished in 258.63s.
+I1001 08:17:42.267483 139779172703616 flax_training.py:756] Whole training step done in 258.6228652000427 (390 steps)
+I1001 08:17:42.272127 139779172703616 flax_training.py:858] Epoch 147 finished in 258.63s.
+I1001 08:22:00.880824 139779172703616 flax_training.py:756] Whole training step done in 258.60848903656006 (390 steps)
+I1001 08:22:00.885904 139779172703616 flax_training.py:858] Epoch 148 finished in 258.61s.
+I1001 08:26:19.517166 139779172703616 flax_training.py:756] Whole training step done in 258.63012290000916 (390 steps)
+I1001 08:26:19.528099 139779172703616 flax_training.py:858] Epoch 149 finished in 258.64s.
+I1001 08:26:19.528273 139779172703616 flax_training.py:863] Evaluating at end of epoch 149 (0-indexed)
+I1001 08:26:32.004667 139779172703616 flax_training.py:897] Evaluated model in 12.48.
+I1001 08:30:50.616124 139779172703616 flax_training.py:756] Whole training step done in 258.6110141277313 (390 steps)
+I1001 08:30:50.620478 139779172703616 flax_training.py:858] Epoch 150 finished in 258.62s.
+I1001 08:35:09.239680 139779172703616 flax_training.py:756] Whole training step done in 258.618976354599 (390 steps)
+I1001 08:35:09.244088 139779172703616 flax_training.py:858] Epoch 151 finished in 258.62s.
+I1001 08:39:27.845111 139779172703616 flax_training.py:756] Whole training step done in 258.6007966995239 (390 steps)
+I1001 08:39:27.849531 139779172703616 flax_training.py:858] Epoch 152 finished in 258.61s.
+I1001 08:39:27.861812 139779172703616 checkpoints.py:120] Saving checkpoint at step: 152
+I1001 08:49:29.992468 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_152
+I1001 08:49:29.992846 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_124
+I1001 08:49:29.998061 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 08:53:48.645214 139779172703616 flax_training.py:756] Whole training step done in 258.6469347476959 (390 steps)
+I1001 08:53:48.650151 139779172703616 flax_training.py:858] Epoch 153 finished in 258.65s.
+I1001 08:58:07.252076 139779172703616 flax_training.py:756] Whole training step done in 258.6017019748688 (390 steps)
+I1001 08:58:07.256231 139779172703616 flax_training.py:858] Epoch 154 finished in 258.61s.
+I1001 08:58:07.256312 139779172703616 flax_training.py:863] Evaluating at end of epoch 154 (0-indexed)
+I1001 08:58:19.718792 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 09:02:38.550133 139779172703616 flax_training.py:756] Whole training step done in 258.8310842514038 (390 steps)
+I1001 09:02:38.554023 139779172703616 flax_training.py:858] Epoch 155 finished in 258.84s.
+I1001 09:06:57.181229 139779172703616 flax_training.py:756] Whole training step done in 258.6269795894623 (390 steps)
+I1001 09:06:57.186231 139779172703616 flax_training.py:858] Epoch 156 finished in 258.63s.
+I1001 09:11:15.807633 139779172703616 flax_training.py:756] Whole training step done in 258.62112617492676 (390 steps)
+I1001 09:11:15.812013 139779172703616 flax_training.py:858] Epoch 157 finished in 258.63s.
+I1001 09:15:34.394402 139779172703616 flax_training.py:756] Whole training step done in 258.58213901519775 (390 steps)
+I1001 09:15:34.398802 139779172703616 flax_training.py:858] Epoch 158 finished in 258.59s.
+I1001 09:19:52.994635 139779172703616 flax_training.py:756] Whole training step done in 258.5956108570099 (390 steps)
+I1001 09:19:52.998799 139779172703616 flax_training.py:858] Epoch 159 finished in 258.60s.
+I1001 09:19:52.998874 139779172703616 flax_training.py:863] Evaluating at end of epoch 159 (0-indexed)
+I1001 09:20:05.454215 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 09:24:24.060478 139779172703616 flax_training.py:756] Whole training step done in 258.6059420108795 (390 steps)
+I1001 09:24:24.065611 139779172703616 flax_training.py:858] Epoch 160 finished in 258.61s.
+I1001 09:28:42.703978 139779172703616 flax_training.py:756] Whole training step done in 258.6381092071533 (390 steps)
+I1001 09:28:42.708616 139779172703616 flax_training.py:858] Epoch 161 finished in 258.64s.
+I1001 09:33:01.358686 139779172703616 flax_training.py:756] Whole training step done in 258.6498167514801 (390 steps)
+I1001 09:33:01.363508 139779172703616 flax_training.py:858] Epoch 162 finished in 258.65s.
+I1001 09:37:20.001413 139779172703616 flax_training.py:756] Whole training step done in 258.63763427734375 (390 steps)
+I1001 09:37:20.006375 139779172703616 flax_training.py:858] Epoch 163 finished in 258.64s.
+I1001 09:41:38.628319 139779172703616 flax_training.py:756] Whole training step done in 258.62169551849365 (390 steps)
+I1001 09:41:38.633032 139779172703616 flax_training.py:858] Epoch 164 finished in 258.63s.
+I1001 09:41:38.633107 139779172703616 flax_training.py:863] Evaluating at end of epoch 164 (0-indexed)
+I1001 09:41:51.090101 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 09:46:09.673353 139779172703616 flax_training.py:756] Whole training step done in 258.58295464515686 (390 steps)
+I1001 09:46:09.678024 139779172703616 flax_training.py:858] Epoch 165 finished in 258.59s.
+I1001 09:50:28.285902 139779172703616 flax_training.py:756] Whole training step done in 258.6076636314392 (390 steps)
+I1001 09:50:28.290462 139779172703616 flax_training.py:858] Epoch 166 finished in 258.61s.
+I1001 09:50:28.302911 139779172703616 checkpoints.py:120] Saving checkpoint at step: 166
+I1001 09:57:24.493032 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_166
+I1001 09:57:24.493419 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_138
+I1001 09:57:24.503578 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 10:01:43.151979 139779172703616 flax_training.py:756] Whole training step done in 258.6481304168701 (390 steps)
+I1001 10:01:43.157325 139779172703616 flax_training.py:858] Epoch 167 finished in 258.65s.
+I1001 10:06:01.802716 139779172703616 flax_training.py:756] Whole training step done in 258.6450936794281 (390 steps)
+I1001 10:06:01.807741 139779172703616 flax_training.py:858] Epoch 168 finished in 258.65s.
+I1001 10:10:20.418985 139779172703616 flax_training.py:756] Whole training step done in 258.61101174354553 (390 steps)
+I1001 10:10:20.423688 139779172703616 flax_training.py:858] Epoch 169 finished in 258.62s.
+I1001 10:10:20.423769 139779172703616 flax_training.py:863] Evaluating at end of epoch 169 (0-indexed)
+I1001 10:10:32.889692 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 10:14:51.498942 139779172703616 flax_training.py:756] Whole training step done in 258.60897064208984 (390 steps)
+I1001 10:14:51.503409 139779172703616 flax_training.py:858] Epoch 170 finished in 258.61s.
+I1001 10:19:10.094442 139779172703616 flax_training.py:756] Whole training step done in 258.590793132782 (390 steps)
+I1001 10:19:10.099125 139779172703616 flax_training.py:858] Epoch 171 finished in 258.60s.
+I1001 10:23:28.713120 139779172703616 flax_training.py:756] Whole training step done in 258.61376547813416 (390 steps)
+I1001 10:23:28.717601 139779172703616 flax_training.py:858] Epoch 172 finished in 258.62s.
+I1001 10:27:47.318409 139779172703616 flax_training.py:756] Whole training step done in 258.60057067871094 (390 steps)
+I1001 10:27:47.323212 139779172703616 flax_training.py:858] Epoch 173 finished in 258.61s.
+I1001 10:32:05.948099 139779172703616 flax_training.py:756] Whole training step done in 258.62456130981445 (390 steps)
+I1001 10:32:05.952374 139779172703616 flax_training.py:858] Epoch 174 finished in 258.63s.
+I1001 10:32:05.952466 139779172703616 flax_training.py:863] Evaluating at end of epoch 174 (0-indexed)
+I1001 10:32:18.408214 139779172703616 flax_training.py:897] Evaluated model in 12.46.
+I1001 10:36:37.007376 139779172703616 flax_training.py:756] Whole training step done in 258.5988380908966 (390 steps)
+I1001 10:36:37.012294 139779172703616 flax_training.py:858] Epoch 175 finished in 258.60s.
+I1001 10:40:55.604473 139779172703616 flax_training.py:756] Whole training step done in 258.5919244289398 (390 steps)
+I1001 10:40:55.608792 139779172703616 flax_training.py:858] Epoch 176 finished in 258.60s.
+I1001 10:45:14.235144 139779172703616 flax_training.py:756] Whole training step done in 258.6261248588562 (390 steps)
+I1001 10:45:14.239637 139779172703616 flax_training.py:858] Epoch 177 finished in 258.63s.
+I1001 10:49:32.846480 139779172703616 flax_training.py:756] Whole training step done in 258.6066505908966 (390 steps)
+I1001 10:49:32.850785 139779172703616 flax_training.py:858] Epoch 178 finished in 258.61s.
+I1001 10:53:51.455248 139779172703616 flax_training.py:756] Whole training step done in 258.60423493385315 (390 steps)
+I1001 10:53:51.459990 139779172703616 flax_training.py:858] Epoch 179 finished in 258.61s.
+I1001 10:53:51.460065 139779172703616 flax_training.py:863] Evaluating at end of epoch 179 (0-indexed)
+I1001 10:54:03.925836 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 10:58:22.534157 139779172703616 flax_training.py:756] Whole training step done in 258.6080570220947 (390 steps)
+I1001 10:58:22.538301 139779172703616 flax_training.py:858] Epoch 180 finished in 258.61s.
+I1001 10:58:22.551457 139779172703616 checkpoints.py:120] Saving checkpoint at step: 180
+I1001 11:07:22.517877 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_180
+I1001 11:07:22.518329 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_152
+I1001 11:07:22.528432 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 11:11:41.191016 139779172703616 flax_training.py:756] Whole training step done in 258.66222500801086 (390 steps)
+I1001 11:11:41.196354 139779172703616 flax_training.py:858] Epoch 181 finished in 258.67s.
+I1001 11:15:59.822586 139779172703616 flax_training.py:756] Whole training step done in 258.62600779533386 (390 steps)
+I1001 11:15:59.827383 139779172703616 flax_training.py:858] Epoch 182 finished in 258.63s.
+I1001 11:20:18.461684 139779172703616 flax_training.py:756] Whole training step done in 258.6340651512146 (390 steps)
+I1001 11:20:18.466461 139779172703616 flax_training.py:858] Epoch 183 finished in 258.64s.
+I1001 11:24:37.100013 139779172703616 flax_training.py:756] Whole training step done in 258.6333317756653 (390 steps)
+I1001 11:24:37.105097 139779172703616 flax_training.py:858] Epoch 184 finished in 258.64s.
+I1001 11:24:37.105179 139779172703616 flax_training.py:863] Evaluating at end of epoch 184 (0-indexed)
+I1001 11:24:49.592143 139779172703616 flax_training.py:897] Evaluated model in 12.49.
+I1001 11:29:08.239479 139779172703616 flax_training.py:756] Whole training step done in 258.64706683158875 (390 steps)
+I1001 11:29:08.244289 139779172703616 flax_training.py:858] Epoch 185 finished in 258.65s.
+I1001 11:33:26.876739 139779172703616 flax_training.py:756] Whole training step done in 258.6321864128113 (390 steps)
+I1001 11:33:26.881021 139779172703616 flax_training.py:858] Epoch 186 finished in 258.64s.
+I1001 11:37:45.489830 139779172703616 flax_training.py:756] Whole training step done in 258.60858607292175 (390 steps)
+I1001 11:37:45.494097 139779172703616 flax_training.py:858] Epoch 187 finished in 258.61s.
+I1001 11:42:04.111853 139779172703616 flax_training.py:756] Whole training step done in 258.61738538742065 (390 steps)
+I1001 11:42:04.116313 139779172703616 flax_training.py:858] Epoch 188 finished in 258.62s.
+I1001 11:46:22.735845 139779172703616 flax_training.py:756] Whole training step done in 258.6192789077759 (390 steps)
+I1001 11:46:22.740477 139779172703616 flax_training.py:858] Epoch 189 finished in 258.62s.
+I1001 11:46:22.740552 139779172703616 flax_training.py:863] Evaluating at end of epoch 189 (0-indexed)
+I1001 11:46:35.191859 139779172703616 flax_training.py:897] Evaluated model in 12.45.
+I1001 11:50:53.788130 139779172703616 flax_training.py:756] Whole training step done in 258.5959973335266 (390 steps)
+I1001 11:50:53.792294 139779172703616 flax_training.py:858] Epoch 190 finished in 258.60s.
+I1001 11:55:12.402105 139779172703616 flax_training.py:756] Whole training step done in 258.6096007823944 (390 steps)
+I1001 11:55:12.406397 139779172703616 flax_training.py:858] Epoch 191 finished in 258.61s.
+I1001 11:59:31.040214 139779172703616 flax_training.py:756] Whole training step done in 258.63358330726624 (390 steps)
+I1001 11:59:31.044496 139779172703616 flax_training.py:858] Epoch 192 finished in 258.64s.
+I1001 12:03:49.667758 139779172703616 flax_training.py:756] Whole training step done in 258.6229975223541 (390 steps)
+I1001 12:03:49.672125 139779172703616 flax_training.py:858] Epoch 193 finished in 258.63s.
+I1001 12:08:08.266278 139779172703616 flax_training.py:756] Whole training step done in 258.59391617774963 (390 steps)
+I1001 12:08:08.271052 139779172703616 flax_training.py:858] Epoch 194 finished in 258.60s.
+I1001 12:08:08.271135 139779172703616 flax_training.py:863] Evaluating at end of epoch 194 (0-indexed)
+I1001 12:08:20.736611 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 12:08:20.748009 139779172703616 checkpoints.py:120] Saving checkpoint at step: 194
+I1001 12:08:31.896265 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_194
+I1001 12:08:31.896467 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_166
+I1001 12:08:31.900215 139779172703616 flax_training.py:909] Saved checkpoint.
+I1001 12:12:50.552902 139779172703616 flax_training.py:756] Whole training step done in 258.65244722366333 (390 steps)
+I1001 12:12:50.557783 139779172703616 flax_training.py:858] Epoch 195 finished in 258.66s.
+I1001 12:17:09.175543 139779172703616 flax_training.py:756] Whole training step done in 258.6175355911255 (390 steps)
+I1001 12:17:09.179917 139779172703616 flax_training.py:858] Epoch 196 finished in 258.62s.
+I1001 12:21:27.786658 139779172703616 flax_training.py:756] Whole training step done in 258.6065285205841 (390 steps)
+I1001 12:21:27.791047 139779172703616 flax_training.py:858] Epoch 197 finished in 258.61s.
+I1001 12:25:46.405878 139779172703616 flax_training.py:756] Whole training step done in 258.61460638046265 (390 steps)
+I1001 12:25:46.410007 139779172703616 flax_training.py:858] Epoch 198 finished in 258.62s.
+I1001 12:30:05.015796 139779172703616 flax_training.py:756] Whole training step done in 258.60555243492126 (390 steps)
+I1001 12:30:05.020673 139779172703616 flax_training.py:858] Epoch 199 finished in 258.61s.
+I1001 12:30:05.020758 139779172703616 flax_training.py:863] Evaluating at end of epoch 199 (0-indexed)
+I1001 12:30:17.487060 139779172703616 flax_training.py:897] Evaluated model in 12.47.
+I1001 12:30:17.499556 139779172703616 checkpoints.py:120] Saving checkpoint at step: 199
+I1001 12:30:44.533573 139779172703616 checkpoints.py:149] Saved checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_199
+I1001 12:30:44.533734 139779172703616 checkpoints.py:174] Removing checkpoint at /scratch1/szhang01/sam_experiments/c2_sam_only/lr_0.1/wd_0.0005/rho_0.05/seed_0/checkpoints/checkpoint_180

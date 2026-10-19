@@ -1,0 +1,21 @@
+modules purged
+loaded CentOS7
+loaded gcc/11.3.0
+loaded cuda/11.8.0
+loaded cudnn
+loaded conda
+==========================================
+Condition 0: smoke test
+Job ID    : 12498488
+Node      : b01-06.hpc.usc.edu
+GPU       : NVIDIA A100-PCIE-40GB
+OUTDIR    : /scratch1/szhang01/sam_experiments/smoke_test
+Start     : Wed Sep 30 19:22:11 PDT 2026
+==========================================
+python: /home1/szhang01/.conda/envs/sam-env/bin/python
+jax: 0.2.28 [GpuDevice(id=0, process_index=0)]
+flax: 0.3.6
+==========================================
+==========================================
+End       : Wed Sep 30 19:22:15 PDT 2026
+==========================================

@@ -1,0 +1,15 @@
+==========================================
+Condition 4: CutMix only (SGD + CutMix alpha=1.0)
+Job ID    : 12498889
+Node      : e22-15.hpc.usc.edu
+GPU       : Tesla P100-PCIE-16GB
+OUTDIR    : /scratch1/szhang01/sam_experiments/c4_cutmix_only
+Start     : Wed Sep 30 21:25:16 PDT 2026
+==========================================
+python: /home1/szhang01/.conda/envs/sam-env/bin/python
+jax: 0.2.28 [GpuDevice(id=0, process_index=0)]
+flax: 0.3.6
+==========================================
+==========================================
+End       : Thu Oct  1 05:52:20 PDT 2026
+==========================================

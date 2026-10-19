@@ -19,7 +19,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --time=00:45:00
-#SBATCH --account=vsharan_1861
+#SBATCH --account=yzhao010_1531
 #SBATCH --output=logs/eval_confusion_%j.out
 #SBATCH --error=logs/eval_confusion_%j.err
 

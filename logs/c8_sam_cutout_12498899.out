@@ -1,0 +1,15 @@
+==========================================
+Condition 8: SAM + Cutout (rho=0.05)
+Job ID    : 12498899
+Node      : e22-11.hpc.usc.edu
+GPU       : Tesla P100-PCIE-16GB
+OUTDIR    : /scratch1/szhang01/sam_experiments/c8_sam_cutout
+Start     : Wed Sep 30 23:46:58 PDT 2026
+==========================================
+python: /home1/szhang01/.conda/envs/sam-env/bin/python
+jax: 0.2.28 [GpuDevice(id=0, process_index=0)]
+flax: 0.3.6
+==========================================
+==========================================
+End       : Thu Oct  1 14:51:31 PDT 2026
+==========================================
