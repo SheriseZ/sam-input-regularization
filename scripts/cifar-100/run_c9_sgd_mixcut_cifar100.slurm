@@ -56,7 +56,6 @@ echo "=========================================="
 cd "$HOME"
 python -m sam.sam_jax.train \
   --dataset cifar100 \
-  --num_classes 100 \
   --model_name WideResnet28x10 \
   --output_dir "$OUTDIR" \
   --image_level_augmentations basic \
