@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render train_error_rate / test_error_rate curves for all 10 conditions
 into a single 2-panel matplotlib PDF, ready to drop into the LaTeX report.
+Optionally also writes a CSV with the full curves and a final-value summary.
 
 Usage (local Mac, .venv activated):
     python scripts/make_curves_figure.py \
@@ -10,8 +11,9 @@ Usage (local Mac, .venv activated):
 Or on CARC (event files live under /scratch1/$USER/sam_experiments/cN_*/...):
     python scripts/make_curves_figure.py \
         --logdir /scratch1/$USER/sam_experiments \
-        --out    ~/curves.pdf
-then rsync back to report/curves.pdf locally.
+        --out    ~/curves.pdf \
+        --csv    ~/curves_data.csv
+then rsync both files back locally.
 
 Notes:
     * Auto-discovers every events.out.tfevents.* file under the logdir.
@@ -20,10 +22,14 @@ Notes:
       not 'scalars').
     * Uses a consistent color palette across conditions (matches the
       slide deck and the TensorBoard default coloring).
+    * --csv writes two files:
+        <stem>_curves.csv  — full step-by-step data for all conditions
+        <stem>_final.csv   — one row per condition: final train/test error
 """
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import re
 import sys
@@ -70,7 +76,7 @@ LABELS = {
     "c3_mixup_only":   r"C3 SGD+Mixup",
     "c4_cutmix_only":  r"C4 SGD+CutMix",
     "c5_sam_mixup":    r"C5 SAM+Mixup",
-    "c6_sam_cutmix":   r"C6 SAM+CutMix$\bigstar$",
+    "c6_sam_cutmix":   r"C6 SAM+CutMix",
     "c7_sgd_cutout":   r"C7 SGD+Cutout",
     "c8_sam_cutout":   r"C8 SAM+Cutout",
     "c9_sgd_mixcut":   r"C9 SGD+mixcut",
@@ -162,12 +168,81 @@ def plot(panel_ax, eventdirs: dict[str, Path], tag: str, ylabel: str):
                       ha="center", va="center", color="red")
 
 
+def write_csv(eventdirs: dict[str, Path], csv_path: Path):
+    """Write two CSV files:
+      <stem>_curves.csv  — full step-by-step curves (condition, step, train_error, test_error)
+      <stem>_final.csv   — one row per condition with final values
+    """
+    stem = csv_path.with_suffix("")
+    curves_path = Path(str(stem) + "_curves.csv")
+    final_path  = Path(str(stem) + "_final.csv")
+
+    curves_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # collect all data
+    all_data = {}  # cond -> {step -> {train_error, test_error}}
+    for cond in COND_ORDER:
+        if cond not in eventdirs:
+            continue
+        train_steps, train_vals = read_scalar(eventdirs[cond], "train_error_rate")
+        test_steps,  test_vals  = read_scalar(eventdirs[cond], "test_error_rate")
+
+        # merge by step
+        rows = {}
+        for s, v in zip(train_steps, train_vals):
+            rows.setdefault(int(s), {})["train_error_rate"] = float(v)
+        for s, v in zip(test_steps, test_vals):
+            rows.setdefault(int(s), {})["test_error_rate"] = float(v)
+        all_data[cond] = rows
+
+    # write curves CSV
+    with open(curves_path, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["condition", "step", "train_error_rate", "test_error_rate"])
+        for cond in COND_ORDER:
+            if cond not in all_data:
+                continue
+            for step in sorted(all_data[cond]):
+                row = all_data[cond][step]
+                writer.writerow([
+                    cond,
+                    step,
+                    row.get("train_error_rate", ""),
+                    row.get("test_error_rate", ""),
+                ])
+    print(f"Wrote {curves_path}")
+
+    # write final CSV (last recorded value for each condition)
+    with open(final_path, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["condition", "label",
+                          "final_train_error_rate", "final_test_error_rate",
+                          "final_train_accuracy",   "final_test_accuracy"])
+        for cond in COND_ORDER:
+            if cond not in all_data:
+                continue
+            rows = all_data[cond]
+            steps_sorted = sorted(rows)
+            last = rows[steps_sorted[-1]]
+            train_err = last.get("train_error_rate", "")
+            test_err  = last.get("test_error_rate",  "")
+            train_acc = round(1.0 - train_err, 6) if train_err != "" else ""
+            test_acc  = round(1.0 - test_err,  6) if test_err  != "" else ""
+            writer.writerow([cond, LABELS[cond],
+                              train_err, test_err,
+                              train_acc, test_acc])
+    print(f"Wrote {final_path}")
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--logdir", required=True,
                    help="root dir containing cN_* subdirs with TB events")
     p.add_argument("--out", required=True,
                    help="output PDF path (e.g. report/curves.pdf)")
+    p.add_argument("--csv", default=None,
+                   help="optional CSV output stem (e.g. ~/curves_data.csv); "
+                        "produces <stem>_curves.csv and <stem>_final.csv")
     args = p.parse_args()
 
     root = Path(args.logdir).expanduser().resolve()
@@ -202,6 +277,9 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, format="pdf", bbox_inches="tight")
     print(f"\nWrote {out}")
+
+    if args.csv:
+        write_csv(eventdirs, Path(args.csv).expanduser().resolve())
 
 
 if __name__ == "__main__":
