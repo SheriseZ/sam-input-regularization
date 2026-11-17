@@ -33,6 +33,12 @@ flags.DEFINE_bool('use_test_set', True,
                   'observations will be set aside from the training set and '
                   'used as a validation set instead.')
 
+flags.DEFINE_float('train_fraction', 1.0,
+                   'Fraction of training data to use (e.g. 0.2 for 20%). '
+                   'Applied after the train/val split when use_test_set=True. '
+                   'Samples are taken from the front of the shuffled TFDS '
+                   'split, which is approximately class-balanced for CIFAR.')
+
 
 class DatasetSource(abc.ABC):
   """Parent for classes that load, preprocess and serve datasets.
@@ -187,13 +193,18 @@ class CifarDatasetSource(TFDSDatasetSource):
     self._image_size = image_size
     self.batch_size = batch_size
     if FLAGS.use_test_set:
-      self.num_training_obs = 50000
-      train_split_size = self.num_training_obs // jax.host_count()
+      full_n = 50000
+      n = int(full_n * FLAGS.train_fraction)
+      self.num_training_obs = n
+      train_split_size = n // jax.host_count()
       start = jax.host_id() * train_split_size
       train_split = 'train[{}:{}]'.format(start, start + train_split_size)
       self._train_ds = tfds.load(name, split=train_split).cache()
       self._test_ds = tfds.load(name, split='test').cache()
-      logging.info('Used test set instead of validation set.')
+      logging.info(
+          'Used test set instead of validation set. '
+          'train_fraction=%.2f → %d training examples.',
+          FLAGS.train_fraction, n)
     else:
       # Validation split not implemented for multi-host training.
       assert jax.host_count() == 1
