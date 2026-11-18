@@ -56,7 +56,7 @@ python -m sam.sam_jax.train \
   --dataset cifar100 \
   --model_name WideResnet28x10 \
   --output_dir "$OUTDIR" \
-  --image_level_augmentations none \
+  --image_level_augmentations basic \
   --batch_level_augmentations none \
   --num_epochs 200 \
   --batch_size 128 \
